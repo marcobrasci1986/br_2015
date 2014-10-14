@@ -1,6 +1,30 @@
+@font-face {
+  font-family: 'signika-regular';
+  src: url('../fonts/Signika-Regular.ttf');
+}
+@font-face {
+  font-family: 'signika-bold';
+  src: url('../fonts/Signika-Bold.ttf');
+}
+body {
+  font-family: 'signika';
+}
+h1 {
+  font-family: 'signika-bold';
+}
 .imgFullWidth {
   width: 100%;
 }
+/*
+Header
+*/
+.welcomeText {
+  margin: auto;
+  width: 28%;
+}
+/*
+Video + play button
+*/
 .videoWrapper {
   position: relative;
 }
