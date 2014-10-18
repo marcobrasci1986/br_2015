@@ -1,26 +1,3 @@
-@font-face {
-  font-family: 'signika-regular';
-  src: url('../fonts/Signika-Regular.ttf');
-}
-@font-face {
-  font-family: 'signika-bold';
-  src: url('../fonts/Signika-Bold.ttf');
-}
-body {
-  font-family: 'signika-regular';
-  font-size: 100%;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'signika-bold';
-}
-.imgFullWidth {
-  width: 100%;
-}
 /*
 Video + play button
 */
@@ -58,8 +35,8 @@ Header
   text-align: center;
 }
 .breeze-logo {
-  background-image: url("../images/breeze-logo.jpg");
-  background-repeat: no-repeat;
-  width: 87px;
   margin-top: 13px;
+}
+.nav a {
+  font-size: 3em;
 }
