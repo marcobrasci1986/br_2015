@@ -1,11 +1,11 @@
 /* Media queries */
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  body {
-    font-size: 100%;
-  }
   .nav a {
     font-size: 1em;
+  }
+  .welcomeText {
+    font-size: 62px;
   }
 }
 /* Medium devices (desktops, 992px and up) */
@@ -16,6 +16,9 @@
   .nav a {
     font-size: 1em;
   }
+  .welcomeText {
+    font-size: 81px;
+  }
 }
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
@@ -24,5 +27,8 @@
   }
   .nav a {
     font-size: 1em;
+  }
+  .welcomeText {
+    font-size: 98px;
   }
 }
