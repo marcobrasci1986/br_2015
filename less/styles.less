@@ -7,7 +7,19 @@
 
 @videoPlayBoxHeight: 16%;
 
+/**
+Visie Block
+*/
+@visieBlockTitleColor: #3c3c3c;
+@visieBlockTextColor: #a0a0a0;
+@visieBorderBottom: #dcdcdc;
+@visieBlockMarginTop:3%;
+@visieTitleWidth: 90%;
 
+
+.test{
+    background-color: yellow; 
+}
 
 /*
 Video + play button
@@ -48,6 +60,48 @@ Header
     text-align: center;
 }
 .nav a{
-   font-size: 3em;
+ font-size: 3em;
 }
+.navMargin{
+    margin-top: 51px;
+}
+
+/**
+Visie
+*/
+.visieBlock{
+    background-color: @welcomeTextColor; 
+    border-bottom: 1px solid @visieBorderBottom;
+    text-align: center;
+    padding: 4% 0px;
+}
+.visieBlock h1{
+    color: @visieBlockTitleColor;
+    width: @visieTitleWidth;
+}
+.visieBlock h6{
+    color: @visieBlockTextColor;
+    width: @visieTitleWidth - 20;
+    margin-top: @visieBlockMarginTop;
+}
+.visieBlock button{
+    margin-top: @visieBlockMarginTop;
+}
+.visieBlock h1, .visieBlock h6, .visieBlock button{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-visie{
+    color:@visieBlockTextColor;
+    background-color: @welcomeTextColor;
+    border-color:@visieBlockTextColor; 
+    text-transform: uppercase;
+    border-radius: 0px;
+}
+.btn-visie:hover{
+    color:@visieBlockTextColor;
+    border-color:@visieBlockTitleColor; 
+}
+
 
