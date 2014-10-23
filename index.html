@@ -12,10 +12,12 @@
     <link rel="stylesheet" href="css/font.css" />
     <link rel="stylesheet" href="css/util.css" />
     <link rel="stylesheet" href="css/media-queries-overwrites.css" />
+    <link rel="stylesheet" href="css/debug.css" />
+
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
+        <div class="container-fliud-fluid">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
                  <span class="sr-only">Toggle navigation</span>
@@ -27,10 +29,10 @@
                 <img src="images/breeze-logo.jpg" class="breeze-logo"/>
             </a>
         </div>
-        <div class="navbar-collapse collapse">
+        <div id="navmain" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li class="active"><a href="#">kalender</a></li>
-                <li><a href="#about">locaties</a></li>
+                <li><a href="#" onclick="animateScroll('#locations');">locaties</a></li>
                 <li><a href="#contact">breezefm</a></li>
                 <li><a href="#contact">artikels</a></li>
                 <li><a href="#contact">visie</a></li>
@@ -40,14 +42,14 @@
     </div>
 </div> 
 
-<div class="container noContainerPadding navMargin">
+<div class="container-fliud noContainerPadding navMargin">
  <div class="videoWrapper">
     <div class="welcomeTextWrapper centerAbsolute">
         <h1 class="welcomeText">'Welkom <br/> bij Breeze,</h1>
     </div>
 
     <a class="various fancybox.iframe" href="http://www.youtube.com/embed/L9szn1QQfas?autoplay=1&showinfo=0">
-        <img src="images/breeze-main.jpg" class="imgFullWidth" alt="">
+        <img src="images/breeze-main-2.jpg" class="imgFullWidth" >
         <div class="videoPlay centerAbsolute"></div>
 
         <img src="images/play.png" class="centerAbsolute videoPlayImg"></img> 
@@ -57,21 +59,84 @@
 
 </div>
 
-<div class="container visieBlock">
-
+<!-- VISIE BLOCK 1-->
+<div class="container-fliud visieBlock visie1">
     <h1>Wij zijn een groep jonge mensen met een passie voor Jezus</h1>
     <h6>Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent sed lobortis diam. Pellentesque nec luctus urna. Suspendisse sollicitudin augue a justo ornare lobortis.</h6>
-
     <button class="btn btn-visie" type="button">
         Onze Visie
     </button>
+</div>
+
+<!-- LOCATIONS-->
+
+<div class="container-fliud noContainerPadding">
+
+
+    <div id="locations" class="locations text-center">
+        <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-2 location">
+                <img src="images/kortrijk.png" />
+                <h1>Kortijk</h1>
+                <h6>Jan Moors</h6>
+                <h6>kortijk@breeze.be</h6>
+            </div>
+
+
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-2 location">
+                <img src="images/gent.png" />
+                <h1>Gent</h1>
+                <h6>John Doe</h6>
+                <h6>gent@breeze.be</h6>
+            </div>
+
+
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-2 location">
+                <img src="images/antwerpen.png" />
+                <h1>Antwerpen</h1>
+                <h6>Mark Johnson</h6>
+                <h6>antwerpen@breeze.be</h6>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-2 location">
+                <img src="images/leuven.png" />
+                <h1>Leuven</h1>
+                <h6>Marco Brasci</h6>
+                <h6>leuven@breeze.be</h6>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-2 location">
+                <img src="images/hasselt.png" />
+                <h1>Hasselt</h1>
+                <h6>Jane Doe</h6>
+                <h6>hasselt@breeze.be</h6>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fliud noContainerPadding">
+    <section id="visie2" data-speed="6" data-type="background">
+        <div class="visieBlock visie2">
+            <h1>'Wij zijn onder de indruk van de eerste christenen,</h1>
+            <h6>Praesent sed lobortis diam. Pellentesque nec luctus urna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse sollicitudin augue a justo ornare lobortis.</h6>
+            <button class="btn btn-visie" type="button">
+                Onze Visie
+            </button>
+        </div>
+
+
+    </section>
 
 </div>
 
 
 
+
+
+
+
 <hr>
-<div class="container">
+<div class="container-fliud">
     <footer>
         <p>&copy; Company 2014</p>
     </footer>
@@ -81,8 +146,12 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+<script src="js/modernizr.custom.js"></script>
 <script src="js/jquery.fancybox.pack.js"></script>
 <script src="js/jquery.fittext.js"></script>
+<script src="js/animatescroll.min.js"></script>
+<script src="js/parallax-scrolling.js"></script>
+
 
 <script type="text/javascript">
 $(document).ready(function () {
@@ -100,9 +169,30 @@ $(document).ready(function () {
         closeEffect: 'none'
     });
 
-    $(".welcomeText").fitText(1.2, { minFontSize: '23px', maxFontSize: '106px' })
+    $(".welcomeText").fitText(1.2, { minFontSize: '23px', maxFontSize: '106px' });
+
+
+    $(".location" ).hover(
+      function() {
+        $( this ).addClass("hoverLocation");
+    }, function() {
+        $( this ).removeClass( "hoverLocation" );
+    }
+    );
+
+
+
+
 });
 
-</script>
+/*
+    Scroll to id and hide collapsable nav 
+    */
+    function animateScroll(id){
+        $(id).animatescroll();
+        $('#navmain').collapse('hide');
+    }
+
+    </script>
 </body>
 </html>

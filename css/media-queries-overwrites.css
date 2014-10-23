@@ -2,10 +2,21 @@
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .nav a {
-    font-size: 1em;
+    font-size: 1.5em;
   }
   .welcomeText {
     font-size: 62px;
+  }
+  .locations img {
+    height: initial;
+    width: initial;
+  }
+  .row {
+    width: 70%;
+    margin: auto;
+  }
+  .location {
+    width: 20%;
   }
 }
 /* Medium devices (desktops, 992px and up) */
@@ -19,6 +30,9 @@
   .welcomeText {
     font-size: 81px;
   }
+  .location {
+    width: 20%;
+  }
 }
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
@@ -30,5 +44,8 @@
   }
   .welcomeText {
     font-size: 98px;
+  }
+  .location {
+    width: 20%;
   }
 }

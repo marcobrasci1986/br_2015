@@ -13,13 +13,18 @@ Visie Block
 @visieBlockTitleColor: #3c3c3c;
 @visieBlockTextColor: #a0a0a0;
 @visieBorderBottom: #dcdcdc;
-@visieBlockMarginTop:3%;
 @visieTitleWidth: 90%;
+@visieBlockMarginTop:3%;
 
 
-.test{
-    background-color: yellow; 
+
+
+
+.row{
+    width: initial;
+    margin: 0;
 }
+
 
 /*
 Video + play button
@@ -45,7 +50,7 @@ Header
 **********************/
 .welcomeText{
     color: @welcomeTextColor;
-    margin: 16% auto 0%;
+    margin: 6% auto 0%;
 }
 
 .welcomeTextWrapper{
@@ -60,7 +65,7 @@ Header
     text-align: center;
 }
 .nav a{
- font-size: 3em;
+   font-size: 3em;
 }
 .navMargin{
     margin-top: 51px;
@@ -70,19 +75,32 @@ Header
 Visie
 */
 .visieBlock{
-    background-color: @welcomeTextColor; 
-    border-bottom: 1px solid @visieBorderBottom;
     text-align: center;
     padding: 4% 0px;
 }
-.visieBlock h1{
+
+
+.visie1{
+    background-color: @welcomeTextColor; 
+    border-bottom: 1px solid @visieBorderBottom; 
+}
+.visie1 h1{
     color: @visieBlockTitleColor;
+    
+}
+
+.visieBlock h1{
     width: @visieTitleWidth;
 }
 .visieBlock h6{
-    color: @visieBlockTextColor;
     width: @visieTitleWidth - 20;
     margin-top: @visieBlockMarginTop;
+}
+.visie1 h6{
+    color: @visieBlockTextColor;
+}
+.visie2{
+    color: @welcomeTextColor;
 }
 .visieBlock button{
     margin-top: @visieBlockMarginTop;
@@ -103,5 +121,55 @@ Visie
     color:@visieBlockTextColor;
     border-color:@visieBlockTitleColor; 
 }
+
+/**
+Locations
+*/
+.location{
+
+ cursor: pointer;  
+}
+.locations{
+    background-color: #f0f0f0;
+}
+.locations .location{
+    padding: 15px 0px;
+}
+.location h1{
+    color:@visieBlockTitleColor;
+}
+.location h6{
+    font-size: 1.0em;
+    color:@visieBlockTextColor;
+}
+
+.location:hover{
+    color:@welcomeTextColor;
+    background-image: url(../images/leuven-hover.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.locations img{
+    height: 70px;
+    width: 90px;
+}
+
+.hoverLocation h1, .hoverLocation h6{
+    color:@welcomeTextColor;
+}
+
+.hoverLocation img{
+    visibility: hidden;
+}
+
+/*
+Parrallel scroling
+*/
+
+#visie2 { 
+    background: url(../images/visie-butterfly.jpg) no-repeat; 
+    background-position: 50% 0px; //initial position. This wil be overwritten every thime we scroll
+    background-attachment:fixed;
+} 
 
 

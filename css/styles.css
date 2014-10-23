@@ -1,8 +1,9 @@
 /**
 Visie Block
 */
-.test {
-  background-color: yellow;
+.row {
+  width: initial;
+  margin: 0;
 }
 /*
 Video + play button
@@ -25,7 +26,7 @@ Header
 **********************/
 .welcomeText {
   color: #f7f7f7;
-  margin: 16% auto 0%;
+  margin: 6% auto 0%;
 }
 .welcomeTextWrapper {
   text-align: center;
@@ -47,19 +48,28 @@ Header
 Visie
 */
 .visieBlock {
-  background-color: #f7f7f7;
-  border-bottom: 1px solid #dcdcdc;
   text-align: center;
   padding: 4% 0px;
 }
-.visieBlock h1 {
+.visie1 {
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #dcdcdc;
+}
+.visie1 h1 {
   color: #3c3c3c;
+}
+.visieBlock h1 {
   width: 90%;
 }
 .visieBlock h6 {
-  color: #a0a0a0;
   width: 70%;
   margin-top: 3%;
+}
+.visie1 h6 {
+  color: #a0a0a0;
+}
+.visie2 {
+  color: #f7f7f7;
 }
 .visieBlock button {
   margin-top: 3%;
@@ -80,4 +90,48 @@ Visie
 .btn-visie:hover {
   color: #a0a0a0;
   border-color: #3c3c3c;
+}
+/**
+Locations
+*/
+.location {
+  cursor: pointer;
+}
+.locations {
+  background-color: #f0f0f0;
+}
+.locations .location {
+  padding: 15px 0px;
+}
+.location h1 {
+  color: #3c3c3c;
+}
+.location h6 {
+  font-size: 1.0em;
+  color: #a0a0a0;
+}
+.location:hover {
+  color: #f7f7f7;
+  background-image: url(../images/leuven-hover.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.locations img {
+  height: 70px;
+  width: 90px;
+}
+.hoverLocation h1,
+.hoverLocation h6 {
+  color: #f7f7f7;
+}
+.hoverLocation img {
+  visibility: hidden;
+}
+/*
+Parrallel scroling
+*/
+#visie2 {
+  background: url(../images/visie-butterfly.jpg) no-repeat;
+  background-position: 50% 0px;
+  background-attachment: fixed;
 }
