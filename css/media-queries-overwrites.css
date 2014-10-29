@@ -1,4 +1,7 @@
 /* Media queries */
+/**
+Colors
+*/
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .nav a {
@@ -18,6 +21,48 @@
   .location {
     width: 20%;
   }
+  .calender-item .date h1 {
+    font-size: initial;
+  }
+  .description {
+    font-size: initial;
+  }
+  .calendar .row1:nth-child(1) {
+    background-color: #ffffff;
+  }
+  .calendar .row1:nth-child(2) {
+    background-color: #e69f55;
+  }
+  .calendar .row1:nth-child(2) .city {
+    color: inherit;
+  }
+  .calendar .row1:nth-child(3) {
+    background-color: #ffffff;
+  }
+  .calendar .row1:nth-child(4) {
+    background-color: #78b096;
+  }
+  .calendar .row1:nth-child(4) .city {
+    color: inherit;
+  }
+  .calendar .row2:nth-child(1) {
+    background-color: #e1bf5c;
+  }
+  .calendar .row2:nth-child(1) .city {
+    color: inherit;
+  }
+  .calendar .row2:nth-child(2) {
+    background-color: #ffffff;
+  }
+  .calendar .row2:nth-child(3) {
+    background-color: #d46c5b;
+  }
+  .calendar .row2:nth-child(4) {
+    background-color: #ffffff;
+  }
+  .calendar .rowHeight {
+    height: 195px;
+  }
 }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
@@ -33,6 +78,9 @@
   .location {
     width: 20%;
   }
+  .calendar .rowHeight {
+    height: 240px;
+  }
 }
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
@@ -47,5 +95,8 @@
   }
   .location {
     width: 20%;
+  }
+  .calendar .rowHeight {
+    height: 240px;
   }
 }

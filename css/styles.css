@@ -1,9 +1,36 @@
 /**
-Visie Block
+Visie Block  
+*/
+/**
+Locations
+*/
+/**
+Colors
+*/
+/*
+Calendar Pagination
 */
 .row {
   width: initial;
   margin: 0;
+}
+/*
+Colors
+*/
+.white {
+  background-color: #ffffff;
+}
+.orange {
+  background-color: #e69f55;
+}
+.aqua {
+  background-color: #78b096;
+}
+.yellow {
+  background-color: #e1bf5c;
+}
+.red {
+  background-color: #d46c5b;
 }
 /*
 Video + play button
@@ -117,8 +144,8 @@ Locations
   background-position: center;
 }
 .locations img {
-  height: 70px;
-  width: 90px;
+  height: 60px;
+  width: 80px;
 }
 .hoverLocation h1,
 .hoverLocation h6 {
@@ -132,6 +159,120 @@ Parrallel scroling
 */
 #visie2 {
   background: url(../images/visie-butterfly.jpg) no-repeat;
-  background-position: 50% 0px;
+  background-position: 50% -534px;
   background-attachment: fixed;
+}
+/**
+Calendar
+*/
+.calendar {
+  background-color: #f0f0f0;
+}
+.calendar h1 {
+  margin: 0px;
+  padding-top: 3%;
+}
+.calendar .calendar-arrow {
+  margin-top: 1%;
+}
+.calender-item {
+  height: 200px;
+  padding: 2% 3%;
+}
+.calendar .firstRow {
+  margin-top: 5%;
+}
+.dayLocation span {
+  font-size: 1.25em;
+}
+.calender-item .day {
+  font-family: 'signika-bold';
+  text-transform: uppercase;
+}
+.calender-item .city {
+  color: #a0a0a0;
+}
+.calender-item .date {
+  font-family: 'signika-bold';
+  margin-top: 10%;
+}
+.calender-item .date h1 {
+  font-size: 2.5em;
+}
+.description {
+  font-size: 1.75em;
+  margin-top: 5%;
+}
+.calendar-pagination {
+  text-align: center;
+  padding: 5%;
+}
+.pagination-button {
+  text-transform: uppercase;
+  padding: 1%;
+  border: 1px solid #3d3d3d;
+}
+.less-activities-btn {
+  color: #828282;
+  background-color: transparent;
+}
+.more-activities-btn {
+  background-color: #3d3d3d;
+  color: #f7f7f7;
+}
+.pagination-less-icon {
+  color: #828282;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+  margin-right: 5px;
+}
+.pagination-more-icon {
+  color: #f7f7f7;
+  margin-left: 5px;
+}
+.calendar .row1:nth-child(1) {
+  background-color: #ffffff;
+}
+.calendar .row1:nth-child(2) {
+  background-color: #e69f55;
+}
+.calendar .row1:nth-child(2) .city {
+  color: inherit;
+}
+.calendar .row1:nth-child(2) {
+  background-color: #e69f55;
+}
+.calendar .row1:nth-child(3) {
+  background-color: #78b096;
+}
+.calendar .row1:nth-child(3) .city {
+  color: inherit;
+}
+.calendar .row1:nth-child(4) {
+  background-color: #ffffff;
+}
+.calendar .row1:nth-child(4) .city {
+  color: inherit;
+}
+.calendar .row2:nth-child(1) {
+  background-color: #ffffff;
+}
+.calendar .row2:nth-child(2) {
+  background-color: #d46c5b;
+}
+.calendar .row2:nth-child(2) .city {
+  color: inherit;
+}
+.calendar .row2:nth-child(3) {
+  background-color: #e1bf5c;
+}
+.calendar .row2:nth-child(3) .city {
+  color: inherit;
+}
+.calendar .row2:nth-child(4) {
+  background-color: #ffffff;
 }
