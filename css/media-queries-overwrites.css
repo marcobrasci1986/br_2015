@@ -1,9 +1,26 @@
 /* Media queries */
 /**
+Visie Block  
+*/
+/**
+Locations
+*/
+/**
 Colors
 */
+/*
+Calendar Pagination
+*/
+/*
+Artikels
+*/
+/*@arikel-long: 375px;
+@arikel-short: 150px;*/
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  body {
+    font-size: 100%;
+  }
   .nav a {
     font-size: 1.5em;
   }
@@ -62,6 +79,79 @@ Colors
   }
   .calendar .rowHeight {
     height: 195px;
+  }
+  .item,
+  .grid-sizer {
+    width: 25%;
+  }
+  .item._1 {
+    height: 375px;
+    background-color: #3d3d3d;
+    color: #ffffff;
+  }
+  .item._2 {
+    height: 170px;
+    background-color: #e69f55;
+  }
+  .item._3 {
+    height: 375px;
+    background-color: #ffffff;
+  }
+  .item._4 {
+    height: 170px;
+    background-color: #78b096;
+  }
+  .item._5 {
+    height: 375px;
+    background-color: #ffffff;
+  }
+  .item._6 {
+    height: 375px;
+    background-color: #ffffff;
+  }
+  .item._7 {
+    height: 170px;
+    background-color: #d46c5b;
+  }
+  .item._8 {
+    height: 170px;
+    background-color: #e1bf5c;
+  }
+  .item._9 {
+    height: 375px;
+    background-color: #ffffff;
+  }
+  .item._10 {
+    height: 170px;
+    background-color: #e1bf5c;
+  }
+  .item._11 {
+    height: 375px;
+    background-color: #ffffff;
+  }
+  .item._12 {
+    height: 170px;
+    background-color: #d46c5b;
+  }
+  .item._13 {
+    display: block;
+    height: 375px;
+    background-color: #ffffff;
+  }
+  .item._14 {
+    display: block;
+    height: 375px;
+    background-color: #ffffff;
+  }
+  .item._15 {
+    display: block;
+    height: 170px;
+    background-color: #e69f55;
+  }
+  .item._16 {
+    display: block;
+    height: 170px;
+    background-color: #78b096;
   }
 }
 /* Medium devices (desktops, 992px and up) */

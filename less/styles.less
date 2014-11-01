@@ -1,43 +1,4 @@
-// Play button
-@borderPlayButton: #bed2d1;
-@colorPlayButton: #a5bebd;
-
-//Text color
-@welcomeTextColor: #f7f7f7;
-@videoPlayBoxHeight: 16%;
-
-/**
-Visie Block  
-*/
-@visieBlockTitleColor: #3c3c3c;
-@visieBlockTextColor: #a0a0a0;
-@visieBorderBottom: #dcdcdc;
-@visieTitleWidth: 90%;
-@visieBlockMarginTop:3%;
-
-/**
-Locations
-*/
-@locationBg: #f0f0f0;
-
-/**
-Colors
-*/
-@white: #ffffff;
-@orange: #e69f55;
-@aqua: #78b096;
-@yellow:#e1bf5c;
-@red:#d46c5b;
-
-/*
-Calendar Pagination
-*/
-@dark-pagination-color:#3d3d3d;
-
-
-
-
-
+@import "variables.less";
 
 .row{
     width: initial;
@@ -62,6 +23,10 @@ Colors
 }
 .red{
     background-color: @red;
+}
+.black{
+    background-color: @black;
+    color: @white;
 }
 /*
 Video + play button
@@ -206,8 +171,33 @@ Parrallel scroling
 #visie2 { 
     background: url(../images/visie-butterfly.jpg) no-repeat;
     background-position: 50% -534px; //initial position. This wil be overwritten every thime we scroll
+    background-attachment:fixed; 
+}
+#visie3 { 
+    // background: url(../images/diepgang.jpg) no-repeat;
+    background: url(../images/visie-butterfly.jpg) no-repeat;
+    background-position: 50% 0px; //initial position. This wil be overwritten every thime we scroll
     background-attachment:fixed;
-} 
+}  
+
+/**
+Arrow block
+*/
+
+.arrowBlock{
+    padding-bottom: 5%;
+}
+.arrowBlock h1{
+    margin: 0px;
+    padding-top: 3%;   
+}
+.arrowBlock h6{
+    width: 65%;
+    margin: 2% auto 2% auto;     
+}
+.arrow{
+    font-size: 1.5em;
+}
 
 /**
 Calendar
@@ -215,20 +205,10 @@ Calendar
 .calendar{
     background-color: @locationBg;
 }
-.calendar h1{
-    margin: 0px;
-    padding-top: 3%;
-    
-}
-.calendar .calendar-arrow{
-    margin-top: 1%;
-}
+
 .calender-item{
     height: 200px;
     padding: 2% 3%;
-}
-.calendar .firstRow{
-    margin-top: 5%;
 }
 .dayLocation span{
  font-size: 1.25em;
@@ -335,5 +315,95 @@ Calendar
 .calendar .row2:nth-child(4){
     background-color: @white;
 }
+
+/* 
+Artikels 
+*/ 
+
+
+.artikels{
+    background-color: @locationBg;
+}
+
+
+.item {
+    float: left;
+    background-color: @white; 
+}
+
+.item, .grid-sizer { 
+    width: 33.33%; 
+}
+.item .date{ 
+    padding: 4% 0 0 4%;
+    font-size: 1em;
+}
+.item .author{
+    padding: 0 0 0 4%;
+    font-size: 1em;
+}
+.item h1{ 
+    padding: 0 4% 4% 4%;
+    font-size: 1.5em;
+}
+.item._1{
+    height: @arikel-long;
+    background-color: @black;
+    color: @white;
+}
+.item._2{
+    height: @arikel-short;
+    background-color: @orange;
+}
+.item._3{
+    height: @arikel-long;
+}
+.item._4{
+    height: @arikel-long;
+}
+.item._5{
+    height: @arikel-short;
+    background-color: @aqua;
+}
+.item._6{
+    height: @arikel-short;
+    background-color: @black;
+    color: @white;
+}
+.item._7{
+    height: @arikel-long;
+}
+.item._8{
+    height: @arikel-short;
+    background-color: @red;
+}
+
+.item._9{
+    height: @arikel-long;
+}
+.item._10{
+    height: @arikel-long;
+}
+.item._11{
+    height: @arikel-short;
+    background-color: @yellow;
+}
+.item._12{
+    height: @arikel-short;
+    background-color: @aqua;
+}
+.item._13{
+    display: none;
+}
+.item._14{
+    display: none;
+}
+.item._15{
+    display: none;
+}
+.item._16{
+    display: none;
+}
+
 
 

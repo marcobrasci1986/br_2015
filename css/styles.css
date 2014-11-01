@@ -10,6 +10,11 @@ Colors
 /*
 Calendar Pagination
 */
+/*
+Artikels
+*/
+/*@arikel-long: 375px;
+@arikel-short: 150px;*/
 .row {
   width: initial;
   margin: 0;
@@ -31,6 +36,10 @@ Colors
 }
 .red {
   background-color: #d46c5b;
+}
+.black {
+  background-color: #3d3d3d;
+  color: #ffffff;
 }
 /*
 Video + play button
@@ -162,25 +171,37 @@ Parrallel scroling
   background-position: 50% -534px;
   background-attachment: fixed;
 }
+#visie3 {
+  background: url(../images/visie-butterfly.jpg) no-repeat;
+  background-position: 50% 0px;
+  background-attachment: fixed;
+}
+/**
+Arrow block
+*/
+.arrowBlock {
+  padding-bottom: 5%;
+}
+.arrowBlock h1 {
+  margin: 0px;
+  padding-top: 3%;
+}
+.arrowBlock h6 {
+  width: 65%;
+  margin: 2% auto 2% auto;
+}
+.arrow {
+  font-size: 1.5em;
+}
 /**
 Calendar
 */
 .calendar {
   background-color: #f0f0f0;
 }
-.calendar h1 {
-  margin: 0px;
-  padding-top: 3%;
-}
-.calendar .calendar-arrow {
-  margin-top: 1%;
-}
 .calender-item {
   height: 200px;
   padding: 2% 3%;
-}
-.calendar .firstRow {
-  margin-top: 5%;
 }
 .dayLocation span {
   font-size: 1.25em;
@@ -275,4 +296,87 @@ Calendar
 }
 .calendar .row2:nth-child(4) {
   background-color: #ffffff;
+}
+/* 
+Artikels 
+*/
+.artikels {
+  background-color: #f0f0f0;
+}
+.item {
+  float: left;
+  background-color: #ffffff;
+}
+.item,
+.grid-sizer {
+  width: 33.33%;
+}
+.item .date {
+  padding: 4% 0 0 4%;
+  font-size: 1em;
+}
+.item .author {
+  padding: 0 0 0 4%;
+  font-size: 1em;
+}
+.item h1 {
+  padding: 0 4% 4% 4%;
+  font-size: 1.5em;
+}
+.item._1 {
+  height: 300px;
+  background-color: #3d3d3d;
+  color: #ffffff;
+}
+.item._2 {
+  height: 120px;
+  background-color: #e69f55;
+}
+.item._3 {
+  height: 300px;
+}
+.item._4 {
+  height: 300px;
+}
+.item._5 {
+  height: 120px;
+  background-color: #78b096;
+}
+.item._6 {
+  height: 120px;
+  background-color: #3d3d3d;
+  color: #ffffff;
+}
+.item._7 {
+  height: 300px;
+}
+.item._8 {
+  height: 120px;
+  background-color: #d46c5b;
+}
+.item._9 {
+  height: 300px;
+}
+.item._10 {
+  height: 300px;
+}
+.item._11 {
+  height: 120px;
+  background-color: #e1bf5c;
+}
+.item._12 {
+  height: 120px;
+  background-color: #78b096;
+}
+.item._13 {
+  display: none;
+}
+.item._14 {
+  display: none;
+}
+.item._15 {
+  display: none;
+}
+.item._16 {
+  display: none;
 }

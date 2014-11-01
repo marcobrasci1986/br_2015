@@ -14,36 +14,37 @@
     <link rel="stylesheet" href="css/media-queries-overwrites.css" />
     <link rel="stylesheet" href="css/debug.css" />
 
+
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container-fliud-fluid">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-               <span class="sr-only">Toggle navigation</span>
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-           </button>
-           <a href="#">
-            <img src="images/breeze-logo.jpg" class="breeze-logo"/>
-        </a>
+                 <span class="sr-only">Toggle navigation</span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+             </button>
+             <a href="#">
+                <img src="images/breeze-logo.jpg" class="breeze-logo"/>
+            </a>
+        </div>
+        <div id="navmain" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="#">kalender</a></li>
+                <li><a href="#" onclick="animateScroll('#locations');">locaties</a></li>
+                <li><a href="#contact">breezefm</a></li>
+                <li><a href="#contact">artikels</a></li>
+                <li><a href="#contact">visie</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </div>
     </div>
-    <div id="navmain" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#">kalender</a></li>
-            <li><a href="#" onclick="animateScroll('#locations');">locaties</a></li>
-            <li><a href="#contact">breezefm</a></li>
-            <li><a href="#contact">artikels</a></li>
-            <li><a href="#contact">visie</a></li>
-            <li><a href="#contact">contact</a></li>
-        </ul>
-    </div>
-</div>
 </div> 
 
 <div class="container-fliud noContainerPadding navMargin">
-   <div class="videoWrapper">
+ <div class="videoWrapper">
     <div class="welcomeTextWrapper centerAbsolute">
         <h1 class="welcomeText">'Welkom <br/> bij Breeze,</h1>
     </div>
@@ -127,9 +128,10 @@
 </div>
 <!-- VISIE BLOCK 1-->
 <div class="container-fliud calendar">
-    <div class="text-center">
+    <div class="arrowBlock text-center">
         <h1>Zin om mee te doen?</h1>
-        <span class="glyphicon glyphicon-arrow-down calendar-arrow"></span>
+        <h6></h6>
+        <span class="glyphicon glyphicon-arrow-down arrow"></span>
     </div>
 
     <div class="row firstRow">
@@ -140,9 +142,9 @@
             </div>
 
             <div class="date">
-             <h1>31/01</h1>
-         </div>
-         <div class="description">
+               <h1>31/01</h1>
+           </div>
+           <div class="description">
             Touché, lofprijs en studies die raken
         </div>
 
@@ -253,6 +255,130 @@
 
 </div>
 
+<div class="container-fliud noContainerPadding">
+    <section id="visie3" data-speed="20" data-type="background">
+        <div class="visieBlock visie2">
+            <h1>'Wij zijn op zoek naar diepgang,</h1>
+            <h6>Praesent sed lobortis diam. Pellentesque nec luctus urna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse sollicitudin augue a justo ornare lobortis.</h6>
+            <button class="btn btn-visie" type="button">
+                Onze Visie
+            </button>
+        </div>
+    </section>  
+</div>
+
+<div class="container-fliud artikels">
+    <div class="arrowBlock text-center">
+        <h1>Onze artikels</h1>
+        <h6>Suspendisse sollicitudin augue a justo ornare lobortis. Praesent sed lobortis diam. Pellentesque nec luctus urna. Interdum et malesuada fames ac ante ipsum primis in faucibus.</h6>
+        <span class="glyphicon glyphicon-arrow-down arrow"></span>
+    </div>
+
+    <div id="artikels" class="row">
+      <div class="grid-sizer"></div>
+
+      <div class="item _1">
+        <div class="date">2014.05.13</div>
+        <div class="author">johan menheere</div>
+        <h1>Waaron stierf Jesus aan het kruis voor ons?</h1>
+    </div>
+    <div class="item _2">
+     <div class="date">2014.05.13</div>
+     <div class="author">johan menheere</div>
+     <h1>Waaron stierf Jesus aan het kruis voor ons?</h1>
+ </div>
+ <div class="item _3">            
+    <div class="date">2014.01.01</div>
+    <div class="author">backy cauwels</div>
+    <h1>Launch nieuwe website</h1>
+</div>
+<div class="item _4">
+    <div class="date">2014.01.01</div>
+    <div class="author">backy cauwels</div>
+    <h1>Spetterende opening van het nieuwe seizoen</h1>
+</div>
+
+<div class="item _5">
+
+    <div class="date">2014.05.13</div>
+    <div class="author">johan menheere</div>
+    <h1>Waaron stierf Jesus aan het kruis voor ons?</h1>
+</div>
+<div class="item _6">
+    <div class="date">2014.01.01</div>
+    <div class="author">backy cauwels</div>
+    <h1>Launch nieuwe website</h1>
+</div>
+<div class="item _7">
+    <div class="date">2014.01.01</div>
+    <div class="author">backy cauwels</div>
+    <h1>Spetterende opening van het nieuwe seizoen</h1>
+</div>
+<div class="item _8">
+    <div class="date">2014.02.13</div>
+    <div class="author">john doe</div>
+    <h1>Touché gaat van start vaf februari 2015</h1>
+</div> 
+
+<div class="item _9">
+    <div class="date">2014.05.13</div>
+    <div class="author">johan menheere</div>
+    <h1>Waaron stierf Jesus aan het kruis voor ons?</h1>
+</div>
+<div class="item _10">
+    <div class="date">2014.01.01</div>
+    <div class="author">backy cauwels</div>
+    <h1>Launch nieuwe website</h1>
+</div>
+<div class="item _11">
+    <div class="date">2014.01.01</div>
+    <div class="author">backy cauwels</div>
+    <h1>Spetterende opening van het nieuwe seizoen</h1>
+</div>
+<div class="item _12">
+    <div class="date">2014.02.13</div>
+    <div class="author">john doe</div>
+    <h1>Touché gaat van start vaf februari 2015</h1>
+</div>
+
+<div class="item _13">
+    <div class="date">2014.05.13</div>
+    <div class="author">johan menheere</div>
+    <h1>Waaron stierf Jesus aan het kruis voor ons?</h1>
+</div>
+<div class="item _14">
+ <div class="date">2014.05.13</div>
+ <div class="author">johan menheere</div>
+ <h1>Waaron stierf Jesus aan het kruis voor ons?</h1>
+</div>
+<div class="item _15">
+    <div class="date">2014.01.01</div>
+    <div class="author">backy cauwels</div>
+    <h1>Launch nieuwe website</h1>
+</div>
+<div class="item _16">
+    <div class="date">2014.01.01</div>
+    <div class="author">backy cauwels</div>
+    <h1>Launch nieuwe website</h1>
+</div> 
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
 
 
 
@@ -275,10 +401,12 @@
 <script src="js/jquery.fittext.js"></script>
 <script src="js/animatescroll.min.js"></script>
 <script src="js/parallax-scrolling.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
 
 
 <script type="text/javascript">
 $(document).ready(function () {
+
 
 
     $(".various").fancybox({
@@ -305,7 +433,11 @@ $(document).ready(function () {
     );
 
 
-
+    var container = document.querySelector('#artikels');
+    var msnry = new Masonry( container, {
+      columnWidth: '.grid-sizer',
+      "gutter": 0,
+  });
 
 });
 

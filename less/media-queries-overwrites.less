@@ -1,17 +1,10 @@
 /* Media queries */ 
-/**
-Colors
-*/
-@white: #ffffff;
-@orange: #e69f55;
-@aqua: #78b096;
-@yellow:#e1bf5c;
-@red:#d46c5b;
+@import "variables.less";
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
 	body { 
-		//font-size:100%; 
+		font-size:100%;     
 	}
 	.nav a{
 		font-size: 1.5em;
@@ -72,9 +65,83 @@ Colors
 	}
 	.calendar .row2:nth-child(4){
 		background-color: @white;
-	}
+	} 
 	.calendar .rowHeight{
 		height: 195px;
+	}
+
+	.item, .grid-sizer { 
+		width: 25%;
+	}
+	.item._1{
+		height: @arikel-long + 75px;
+		background-color: @black;
+		color: @white;
+	}
+	.item._2{
+		height: @arikel-short + 50px;
+		background-color: @orange;
+	}
+	.item._3{
+		height: @arikel-long + 75px;
+		background-color: @white;
+	}
+	.item._4{
+		height: @arikel-short + 50px;
+		background-color: @aqua;
+	}
+	.item._5{
+		height: @arikel-long + 75px;
+		background-color: @white;
+	}
+	.item._6{
+		height: @arikel-long + 75px;
+		background-color: @white;
+	}
+	.item._7{
+		height: @arikel-short + 50px;
+		background-color: @red;
+	}
+	.item._8{
+		height: @arikel-short + 50px;
+		background-color: @yellow;
+	}
+
+	.item._9{
+		height: @arikel-long + 75px;
+		background-color: @white;
+	}
+	.item._10{
+		height: @arikel-short + 50px;
+		background-color: @yellow;
+	}
+	.item._11{
+		height: @arikel-long + 75px;
+		background-color: @white;
+	}
+	.item._12{
+		height: @arikel-short + 50px;
+		background-color: @red;
+	}
+	.item._13{
+		display: block;
+		height: @arikel-long + 75px;
+		background-color: @white;
+	}
+	.item._14{
+		display: block;
+		height: @arikel-long + 75px;
+		background-color: @white;
+	}
+	.item._15{
+		display: block;
+		height: @arikel-short + 50px;
+		background-color: @orange;
+	}
+	.item._16{
+		display: block;
+		height: @arikel-short + 50px;
+		background-color: @aqua;
 	}
 
 
