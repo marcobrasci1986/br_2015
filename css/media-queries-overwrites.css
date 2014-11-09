@@ -16,6 +16,9 @@ Artikels
 */
 /*@arikel-long: 375px;
 @arikel-short: 150px;*/
+/**
+Footer
+*/
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   body {
@@ -200,6 +203,44 @@ Artikels
     position: absolute;
     bottom: 0;
   }
+  .navbar-nav.navbar-right:last-child {
+    margin-right: 15px;
+  }
+  ul.footerMenuRight {
+    float: right;
+  }
+  ul.footerMenuLeft img {
+    width: 100%;
+  }
+  .verticalLine {
+    border-left: 1px solid #ffffff;
+    height: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .footerMenuLeft {
+    display: block;
+  }
+  ul.footerMenuLeft {
+    display: inline-block;
+    float: left;
+    padding-left: 0;
+  }
+  ul.footerMenuLeft li {
+    display: inline-block;
+    float: left;
+    padding-left: 0;
+    padding-bottom: 20px;
+  }
+  ul.socialMediaIcons {
+    padding-top: 5%;
+  }
+  .footerLogo {
+    padding-top: 10%;
+  }
+  ul.socialMediaIcons {
+    font-size: 1.5em;
+  }
 }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
@@ -223,6 +264,12 @@ Artikels
   }
   .broadcast-wrapper {
     width: 200px;
+  }
+  .footerLogo {
+    padding-top: 5%;
+  }
+  ul.socialMediaIcons {
+    padding-top: 3%;
   }
 }
 /* Large devices (large desktops, 1200px and up) */

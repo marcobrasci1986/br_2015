@@ -15,8 +15,19 @@ Artikels
 */
 /*@arikel-long: 375px;
 @arikel-short: 150px;*/
+/**
+Footer
+*/
 #navmain {
   background-color: #3d3d3d;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  background-color: #222;
+}
+.navbar-nav {
+  margin-top: 0px;
 }
 .row {
   width: initial;
@@ -49,6 +60,12 @@ Colors
 .black {
   background-color: #3d3d3d;
   color: #ffffff;
+}
+/**
+Nav
+*/
+.navbar-inverse {
+  border-color: #3d3d3d;
 }
 /*
 Video + play button
@@ -183,8 +200,8 @@ Locations
   background-position: center;
 }
 .locations img {
-  height: 60px;
-  width: 80px;
+  height: 40px;
+  width: 60px;
 }
 .hoverLocation h1,
 .hoverLocation h6 {
@@ -207,6 +224,10 @@ Parrallel scroling
 }
 #visie4 {
   background: url(../images/geworteld.jpg) no-repeat;
+  background-position: 50% 0px;
+}
+#visie5 {
+  background: url(../images/visie5.jpg) no-repeat;
   background-position: 50% 0px;
 }
 /**
@@ -360,7 +381,7 @@ Artikels
   font-size: 1em;
 }
 .item h1 {
-  padding: 0 4% 4% 4%;
+  padding: 8% 4% 4% 4%;
   font-size: 1.5em;
 }
 .item._1 {
@@ -485,4 +506,69 @@ Breeze fm block
 }
 .btn-onair {
   position: initial;
+}
+footer {
+  background-color: #2e2e2e;
+}
+.centerWrapper {
+  text-align: center;
+}
+.footerLogo {
+  padding-top: 15%;
+}
+.footerSlogan {
+  color: #898989;
+  padding-top: 3%;
+}
+ul.socialMediaIcons {
+  display: inline-block;
+  font-size: 2.5em;
+  color: #ffffff;
+  padding-top: 10%;
+  padding-left: 0;
+}
+ul.socialMediaIcons li {
+  display: block;
+  float: left;
+  background-color: #3d3d3d;
+}
+ul.socialMediaIcons li a {
+  display: block;
+  color: #ffffff;
+  padding: 20px;
+}
+ul.socialMediaIcons li a:hover {
+  opacity: 0.6;
+}
+.footerMenuLeft {
+  display: none;
+}
+.verticalLine {
+  border-left: 1px solid #ffffff;
+  height: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+ul.footerMenuRight {
+  display: block;
+  float: left;
+  padding-left: 0;
+}
+ul.footerMenuRight li {
+  display: block;
+  margin-left: 30px;
+  float: left;
+}
+ul.footerMenuRight li.first {
+  margin-left: 0px;
+}
+ul.footerMenuRight li a {
+  color: #898989;
+  text-decoration: none;
+}
+ul.footerMenuLeft img {
+  width: 70%;
+}
+.verticalLine {
+  height: 0px;
 }
