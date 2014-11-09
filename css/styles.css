@@ -15,9 +15,18 @@ Artikels
 */
 /*@arikel-long: 375px;
 @arikel-short: 150px;*/
+#navmain {
+  background-color: #3d3d3d;
+}
 .row {
   width: initial;
   margin: 0;
+}
+.breeze-block {
+  padding: 9% 0;
+}
+.breeze-block h1 {
+  margin-top: 0px;
 }
 /*
 Colors
@@ -54,6 +63,13 @@ Video + play button
   background-color: #a5bebd;
   opacity: 0.5;
 }
+.videoPlay-image {
+  height: 15%;
+  width: 15%;
+  border: 1px solid #bed2d1;
+  background-color: #a5bebd;
+  opacity: 0.5;
+}
 .videoPlayImg {
   width: 2%;
 }
@@ -85,7 +101,6 @@ Visie
 */
 .visieBlock {
   text-align: center;
-  padding: 4% 0px;
 }
 .visie1 {
   background-color: #f7f7f7;
@@ -116,16 +131,31 @@ Visie
   margin-left: auto;
   margin-right: auto;
 }
+/**
+Buttons
+*/
 .btn-visie {
-  color: #a0a0a0;
-  background-color: #f7f7f7;
-  border-color: #a0a0a0;
+  border: 1px solid transparent;
+  background-color: transparent;
   text-transform: uppercase;
   border-radius: 0px;
+  padding: 1% 3%;
 }
-.btn-visie:hover {
+.btn-grey {
   color: #a0a0a0;
-  border-color: #3c3c3c;
+  border-color: #a0a0a0;
+}
+.btn-grey:hover {
+  color: #a0a0a0;
+  border-color: #a0a0a0;
+}
+.btn-white {
+  color: #f7f7f7;
+  border-color: #f7f7f7;
+}
+.btn-white:hover {
+  color: #f7f7f7;
+  border-color: #f7f7f7;
 }
 /**
 Locations
@@ -172,9 +202,12 @@ Parrallel scroling
   background-attachment: fixed;
 }
 #visie3 {
-  background: url(../images/visie-butterfly.jpg) no-repeat;
+  background: url(../images/diepgang.jpg) no-repeat;
   background-position: 50% 0px;
-  background-attachment: fixed;
+}
+#visie4 {
+  background: url(../images/geworteld.jpg) no-repeat;
+  background-position: 50% 0px;
 }
 /**
 Arrow block
@@ -184,7 +217,6 @@ Arrow block
 }
 .arrowBlock h1 {
   margin: 0px;
-  padding-top: 3%;
 }
 .arrowBlock h6 {
   width: 65%;
@@ -200,7 +232,7 @@ Calendar
   background-color: #f0f0f0;
 }
 .calender-item {
-  height: 200px;
+  height: 120px;
   padding: 2% 3%;
 }
 .dayLocation span {
@@ -250,6 +282,10 @@ Calendar
   filter: FlipH;
   -ms-filter: "FlipH";
   margin-right: 5px;
+}
+.soundwave-icon {
+  background-image: url(images/sound-wave.png);
+  background-repeat: no-repeat;
 }
 .pagination-more-icon {
   color: #f7f7f7;
@@ -383,4 +419,70 @@ Artikels
 }
 .item._16 {
   display: none;
+}
+/**
+Breeze fm block
+*/
+.breezefm-block {
+  background-color: #f7f7f7;
+  color: #a0a0a0;
+}
+.breezefm-block h1 {
+  color: #3d3d3d;
+}
+.breezefm-block h6 {
+  width: 70%;
+  margin-top: 3%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.breezefm-block img {
+  width: 50%;
+  max-width: 380px;
+}
+.breezefm-block-2 {
+  background-color: #ffffff;
+}
+.video-img-wrapper {
+  width: 50%;
+  position: relative;
+}
+.play-video-image {
+  width: 4%;
+}
+.breeze-fm-main {
+  width: 100%;
+}
+.breezefm-block-2 h1 {
+  margin: 2% 0 2% 0;
+}
+.breezefm-right {
+  position: inherit;
+}
+.broadcast-text {
+  color: #a0a0a0;
+}
+.broadcast-date {
+  color: #3c3c3c;
+  font-family: 'signika-bold';
+}
+.wave {
+  background-image: url("../images/sound-wave.png");
+  background-repeat: no-repeat;
+  padding: 5px 30px;
+  display: block;
+  text-align: center;
+  margin-top: 5%;
+}
+.background-wave-size {
+  background-size: 13px;
+}
+.broadcast-wrapper {
+  background-image: url("../images/sound-wave-scaled.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  width: 130px;
+}
+.btn-onair {
+  position: initial;
 }

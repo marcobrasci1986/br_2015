@@ -44,6 +44,9 @@ Artikels
   .description {
     font-size: initial;
   }
+  .calender-item {
+    height: 200px;
+  }
   .calendar .col-xs-6 {
     width: 25%;
   }
@@ -167,6 +170,36 @@ Artikels
     height: 150px;
     background-color: #78b096;
   }
+  .breeze-fm-main {
+    width: 100%;
+  }
+  .broadcast-wrapper {
+    padding: 0;
+  }
+  .video-img-wrapper {
+    width: 100%;
+  }
+  .background-wave-size {
+    background-size: 15px;
+  }
+  .breeze-block {
+    padding: 4% 0;
+  }
+  .wave {
+    margin-top: 2%;
+  }
+  .broadcast-wrapper {
+    width: 150px;
+  }
+  .breezefm-right {
+    height: 100%;
+    position: absolute;
+    right: 0;
+  }
+  .btn-onair {
+    position: absolute;
+    bottom: 0;
+  }
 }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
@@ -185,6 +218,12 @@ Artikels
   .calendar .rowHeight {
     height: 240px;
   }
+  .background-wave-size {
+    background-size: 17px;
+  }
+  .broadcast-wrapper {
+    width: 200px;
+  }
 }
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
@@ -202,5 +241,8 @@ Artikels
   }
   .calendar .rowHeight {
     height: 240px;
+  }
+  .background-wave-size {
+    background-size: 20px;
   }
 }

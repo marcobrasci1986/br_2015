@@ -20,3 +20,8 @@ Here we define some utility classes
 .positionRelative {
   position: relative;
 }
+.centerBlock {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
