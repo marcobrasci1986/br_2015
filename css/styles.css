@@ -118,6 +118,7 @@ Visie
 */
 .visieBlock {
   text-align: center;
+  position: relative;
 }
 .visie1 {
   background-color: #f7f7f7;
@@ -215,20 +216,24 @@ Parrallel scroling
 */
 #visie2 {
   background: url(../images/visie-butterfly.jpg) no-repeat;
-  background-position: 50% -534px;
+  background-position: 50% 0px;
   background-attachment: fixed;
+  background-size: cover;
 }
 #visie3 {
-  background: url(../images/diepgang.jpg) no-repeat;
+  background: url(../images/visie3.jpg) no-repeat;
   background-position: 50% 0px;
+  background-size: cover;
 }
 #visie4 {
-  background: url(../images/geworteld.jpg) no-repeat;
+  background: url(../images/visie4.jpg) no-repeat;
   background-position: 50% 0px;
+  background-size: cover;
 }
 #visie5 {
   background: url(../images/visie5.jpg) no-repeat;
   background-position: 50% 0px;
+  background-size: cover;
 }
 /**
 Arrow block
