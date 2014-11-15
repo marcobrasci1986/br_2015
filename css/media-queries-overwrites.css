@@ -1,5 +1,8 @@
 /* Media queries */
 /**
+Navigation
+*/
+/**
 Visie Block  
 */
 /**
@@ -24,11 +27,20 @@ Footer
   body {
     font-size: 100%;
   }
+  /**
+	Navigation
+	*/
   .nav a {
     font-size: 1.5em;
   }
   .welcomeText {
     font-size: 62px;
+  }
+  /*
+	Visie 1
+	*/
+  .visieBlock h1 {
+    width: 40%;
   }
   .locations img {
     height: initial;
@@ -241,17 +253,36 @@ Footer
   ul.socialMediaIcons {
     font-size: 1.5em;
   }
+  .videoPlay {
+    height: 80px;
+    width: 80px;
+  }
+  .imagePlay {
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+    left: 50%;
+    margin-left: -16px;
+    width: 32px;
+  }
+  .main-text {
+    height: 269px;
+  }
+  .welcomeText {
+    font-size: 105px;
+  }
+  /* Medium devices (desktops, 992px and up) */
+  /* Large devices (large desktops, 1200px and up) */
 }
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+@media (min-width: 768px) and (min-width: 992px) {
   body {
     font-size: 120%;
   }
   .nav a {
     font-size: 1em;
   }
-  .welcomeText {
-    font-size: 81px;
+  .visieBlock h1 {
+    width: 30%;
   }
   .location {
     width: 20%;
@@ -272,16 +303,12 @@ Footer
     padding-top: 3%;
   }
 }
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
+@media (min-width: 768px) and (min-width: 1200px) {
   body {
     font-size: 150%;
   }
   .nav a {
     font-size: 1em;
-  }
-  .welcomeText {
-    font-size: 98px;
   }
   .location {
     width: 20%;

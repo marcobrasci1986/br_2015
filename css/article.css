@@ -21,3 +21,12 @@ Artikels
 /**
 Footer
 */
+.article h1 {
+  color: #3c3c3c;
+}
+.article h6 {
+  color: #a0a0a0;
+}
+.articleLine {
+  border-bottom: 3px solid #ebebeb;
+}

@@ -1,14 +1,62 @@
 @import "variables.less";
 
-#navmain{
-    background-color: @black;
+html,body {
+    height:100%;
+    margin:0;
+    padding:0;
 }
-.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus{
-    background-color: #222;
+
+
+/**
+    Main image
+    */
+    .banner {
+        height:100%;
+    }
+    .main-text{
+        width: 80%;
+        height: 167px;
+        text-align: center;
+        color:@welcomeTextColor;
+    }
+
+    .imagePlay{
+       position: absolute;
+       top: 50%;
+       margin-top: -8px;
+       left: 50%;
+       margin-left: -8px;
+       width: 16px;
+   }
+   .navMargin{
+    top: 50px !important;
 }
-.navbar-nav{
-    margin-top: 0px;
+.main-image{
+    background-image: url(../images/home-image.jpg);
 }
+
+/**
+    Navigation
+    */
+    #navmain{
+        background-color: @navBg;
+        text-transform: uppercase;
+    }
+    .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus{
+        background-color: @navBg;
+    }
+    .navbar-nav{
+        margin-top: 0px;
+    }
+
+    #navmain ul li a:hover{
+        background-color: @navMouseOver;
+        font-family: 'signika-bold';
+    }
+
+/**
+
+*/
 .row{
     width: initial;
     margin: 0;
@@ -16,9 +64,9 @@
 .breeze-block{
     padding:9% 0;
 }
-.breeze-block h1{
-    margin-top: 0px;
-}
+// .breeze-block h1{
+//     margin-top: 0px;
+// }
 
 
 
@@ -49,7 +97,7 @@ Colors
 Nav
 */
 .navbar-inverse{
-    border-color:@black;
+    border-color:@black; 
 }
 /*
 Video + play button
@@ -60,15 +108,18 @@ Video + play button
 }
 .videoPlay
 {
-    height: @videoPlayBoxHeight;
-    width: @videoPlayBoxHeight/2;
+    height: @playWidth;
+    width: @playHeight;
     border: 1px solid @borderPlayButton;
-    background-color: @colorPlayButton;
-    opacity: 0.5;
+    background-color: rgba(165,190,189,0.5);
+}
+.videoPlay:hover{
+    background-color: @playMouseOver;
+    opacity: 1;
 }
 .videoPlay-image{
-    height: 15%;
-    width: 15%;
+    height: 50px;
+    width: 50px;
     border: 1px solid #bed2d1;
     background-color: #a5bebd;
     opacity: 0.5;
@@ -81,8 +132,7 @@ Video + play button
 Header
 **********************/
 .welcomeText{
-    color: @welcomeTextColor;
-    margin: 6% auto 0%;
+    font-size: 60px;
 }
 
 .welcomeTextWrapper{
@@ -97,10 +147,7 @@ Header
     text-align: center;
 }
 .nav a{
- font-size: 3em;
-}
-.navMargin{
-    margin-top: 51px;
+   font-size: 3em;
 }
 
 /**
@@ -127,11 +174,12 @@ Visie
 .visieBlock h6{
     width: @visieTitleWidth - 20;
     margin-top: @visieBlockMarginTop;
+    font-family: 'signika-light';
 }
 .visie1 h6{
     color: @visieBlockTextColor;
 }
-.visie2{
+.textColorWhite{
     color: @welcomeTextColor;
 }
 .visieBlock button{
@@ -176,7 +224,7 @@ Locations
 */
 .location{
 
-   cursor: pointer;  
+ cursor: pointer;  
 }
 .locations{
     background-color: @locationBg;
@@ -186,6 +234,7 @@ Locations
 }
 .location h1{
     color:@visieBlockTitleColor;
+    text-transform: uppercase;
 }
 .location h6{
     font-size: 1.0em;
@@ -199,8 +248,8 @@ Locations
     background-position: center;
 }
 .locations img{
- height: 40px;
- width: 60px;
+   height: 40px;
+   width: 60px;
 }
 
 .hoverLocation h1, .hoverLocation h6{
@@ -214,30 +263,39 @@ Locations
 /*
 Parrallel scroling
 */
-
-#visie2 { 
-    background: url(../images/visie-butterfly.jpg) no-repeat;
-    background-position: 50% 0px; //initial position. This wil be overwritten every thime we scroll
-    background-attachment:fixed;
-    background-size: cover; 
+#visie2{
+ background-image: url(../images/visie-butterfly.jpg);
 }
-#visie3 { 
-    //background: url(../images/diepgang.jpg) no-repeat;
-    background: url(../images/visie3.jpg) no-repeat;
-    //background: url(../images/visie-butterfly.jpg) no-repeat;
-    background-position: 50% 0px; //initial position. This wil be overwritten every thime we scroll
-    background-size: cover;
+#visie3{ 
+    background-image: url(../images/visie3.jpg);
 } 
 #visie4 { 
-    background: url(../images/visie4.jpg) no-repeat;
-    background-position: 50% 0px; //initial position. This wil be overwritten every thime we scroll
-    background-size: cover;
+    background-image: url(../images/visie4.jpg);
+
 } 
 #visie5{
-    background: url(../images/visie5.jpg) no-repeat;
-    background-position: 50% 0px;
+    background-image: url(../images/visie5.jpg);
+}
+.parralax-image {
+    background-attachment: fixed;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
     background-size: cover;
 }
+.butterfly1{
+    position: absolute;
+    left: 151px;
+}
+
+.butterfly2{
+    position: absolute;
+    right: 30px;  
+}
+.butterfly3{
+ position: absolute;
+ left: 350px;  
+}
+
 
 /**
 Arrow block
@@ -269,7 +327,7 @@ Calendar
     padding: 2% 3%;
 }
 .dayLocation span{
- font-size: 1.25em;
+   font-size: 1.25em;
 }
 .calender-item .day{
     font-family: 'signika-bold';
@@ -560,6 +618,7 @@ footer{
 .footerSlogan{
     color:@footerSloganColor;
     padding-top: 3%;
+    font-family: 'signika-light';
 
 }
 ul.socialMediaIcons{
@@ -570,9 +629,9 @@ ul.socialMediaIcons{
     padding-left: 0;
 }
 ul.socialMediaIcons li{
- display: block;
- float:left;
- background-color: @socialMedaieIconBg;
+   display: block;
+   float:left;
+   background-color: @socialMedaieIconBg;
 }
 ul.socialMediaIcons li a{
     display: block;
@@ -613,8 +672,8 @@ ul.footerMenuRight li.first{
     margin-left: 0px;
 }
 ul.footerMenuRight li a{
- color:@footerSloganColor;
- text-decoration: none;
+   color:@footerSloganColor;
+   text-decoration: none;
 }
 ul.footerMenuLeft img{
     width: 70%
@@ -624,6 +683,8 @@ ul.footerMenuLeft img{
     height: 0px;
 
 }
+
+
 
 
 

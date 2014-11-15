@@ -1,0 +1,19 @@
+/**
+Here we define some utility classes
+
+*/
+.imgFullWidth {
+  width: 100%;
+}
+.centerAbsolute {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.noContainerPadding {
+  padding-left: 0px;
+  padding-right: 0px;
+}

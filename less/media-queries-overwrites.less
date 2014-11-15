@@ -6,12 +6,22 @@
 	body { 
 		font-size:100%;     
 	}
+	/**
+	Navigation
+	*/
 	.nav a{
 		font-size: 1.5em;
 	}
 	.welcomeText{
 
 		font-size: 62px;
+	}
+
+	/*
+	Visie 1
+	*/
+	.visieBlock h1{
+		width: @visieTitleWidth - 30;
 	}
 
 	.locations img{
@@ -239,63 +249,80 @@
 	}
 
 	ul.socialMediaIcons{
-		font-size: 1.5em;
+		font-size: 1.5em; 
 	}
 
-
-}
-
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
-	body { 
-		font-size:120%; 
-	}
-	.nav a{
-		font-size: 1em;
-	}
-	.welcomeText{
-		font-size: 81px;
-	}
-	.location{
-		width: 20%;
-	}
-	.calendar .rowHeight{
-		height: 240px;
-	}
-	.background-wave-size{
-		background-size: 17px;
-	}
-	.broadcast-wrapper{
-		width: 200px;
-	}
-	.footerLogo{
-		padding-top: @footerLogoTopPadding - 10;
-	}
-	ul.socialMediaIcons{
-		padding-top: @footerSocialMediaTopPadding - 7;
+	.videoPlay{
+		height: @playWidth + 30;
+		width: @playHeight + 30;
 	}
 
-}
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
-	body { 
-		font-size:150%;
-	}
-	.nav a{
-		font-size: 1em;
-	}
-	.welcomeText{
-		font-size: 98px;
+	.imagePlay{
+		position: absolute;
+		top: 50%;
+		margin-top: -16px;
+		left: 50%;
+		margin-left: -16px;
+		width: 32px;
 	}
 
-	.location{
-		width: 20%;
+	.main-text{
+		height: 269px;
 	}
-	.calendar .rowHeight{
-		height: 240px;
+	.welcomeText {
+		font-size: 105px;
 	}
-	.background-wave-size{
-		background-size: 20px;
+
+	/* Medium devices (desktops, 992px and up) */
+	@media (min-width: 992px) { 
+		body { 
+			font-size:120%; 
+		}
+		.nav a{
+			font-size: 1em;
+		}
+		.visieBlock h1{
+			width: @visieTitleWidth - 40;
+		}
+		.location{
+			width: 20%;
+		}
+		.calendar .rowHeight{
+			height: 240px;
+		}
+		.background-wave-size{
+			background-size: 17px;
+		}
+		.broadcast-wrapper{
+			width: 200px;
+		}
+		.footerLogo{
+			padding-top: @footerLogoTopPadding - 10;
+		}
+		ul.socialMediaIcons{
+			padding-top: @footerSocialMediaTopPadding - 7;
+		}
+
+	}
+
+	/* Large devices (large desktops, 1200px and up) */
+	@media (min-width: 1200px) { 
+		body { 
+			font-size:150%;
+		}
+		.nav a{
+			font-size: 1em;
+		}
+
+
+		.location{
+			width: 20%;
+		}
+		.calendar .rowHeight{
+			height: 240px;
+		}
+		.background-wave-size{
+			background-size: 20px;
+		}
 	}
 }
