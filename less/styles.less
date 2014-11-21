@@ -5,75 +5,70 @@ html,body {
     margin:0;
     padding:0;
 }
+.row{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 
+}
 
-/**
-    Main image
-    */
-    .banner {
-        height:100%;
-    }
-    .main-text{
-        width: 80%;
-        height: 167px;
-        text-align: center;
-        color:@welcomeTextColor;
-    }
-
-    .imagePlay{
-       position: absolute;
-       top: 50%;
-       margin-top: -8px;
-       left: 50%;
-       margin-left: -8px;
-       width: 16px;
-   }
-   .navMargin{
-    top: 50px !important;
+//Main image
+.banner {
+    height:100%;
 }
 .main-image{
     background-image: url(../images/home-image.jpg);
 }
-
-/**
-    Navigation
-    */
-    #navmain{
-        background-color: @navBg;
-        text-transform: uppercase;
-    }
-    .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus{
-        background-color: @navBg;
-    }
-    .navbar-nav{
-        margin-top: 0px;
-    }
-
-    #navmain ul li a:hover{
-        background-color: @navMouseOver;
-        font-family: 'signika-bold';
-    }
-
-/**
-
-*/
-.row{
-    width: initial;
-    margin: 0;
+.welcome-breeze-text{
+    width: 80%;   
+    text-align: center;
+    color:@welcomeTextColor;
 }
+.welcome-breeze-height{ 
+    height: 200px;
+}
+.welcomeText{
+    font-size: 68px;
+}
+.imagePlay{
+ position: absolute;
+ top: 50%;
+ margin-top: -8px;
+ left: 50%;
+ margin-left: -8px;
+ width: 16px;
+}
+.navMargin{
+    top: 50px !important;
+}
+
+
+
+//Navigation
+#navmain{
+    background-color: @navBg;
+    text-transform: uppercase;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus{
+    background-color: @navBg;
+}
+.navbar-nav{
+    margin-top: 0px;
+}
+
+#navmain ul li a:hover{
+    background-color: @navMouseOver;
+    font-family: 'signika-bold';
+}
+.navbar-inverse{
+    border-color:@black; 
+}
+
 .breeze-block{
     padding:9% 0;
 }
-// .breeze-block h1{
-//     margin-top: 0px;
-// }
 
-
-
-/*
-Colors
-*/
-
+//Colors
 .white{
     background-color: @white;
 }
@@ -93,21 +88,16 @@ Colors
     background-color: @black;
     color: @white;
 }
-/**
-Nav
-*/
-.navbar-inverse{
-    border-color:@black; 
+.lightGrey{
+    background-color: @welcomeTextColor;
 }
-/*
-Video + play button
-*/
-.videoWrapper
-{
+
+
+//Video + play button
+.videoWrapper{
     position: relative;
 }
-.videoPlay
-{
+.videoPlay{
     height: @playWidth;
     width: @playHeight;
     border: 1px solid @borderPlayButton;
@@ -124,16 +114,13 @@ Video + play button
     background-color: #a5bebd;
     opacity: 0.5;
 }
-.videoPlayImg
-{
+.videoPlayImg{
     width: 2%;
 }
-/**********************
-Header
-**********************/
-.welcomeText{
-    font-size: 60px;
-}
+
+//Header
+
+
 
 .welcomeTextWrapper{
     text-align: center;
@@ -147,21 +134,17 @@ Header
     text-align: center;
 }
 .nav a{
-   font-size: 3em;
+ font-size: 3em;
 }
 
-/**
-Visie
-*/
+
+//Visie
 .visieBlock{
     text-align: center;
     position: relative;
 }
-
-
 .visie1{
     background-color: @welcomeTextColor; 
-    border-bottom: 1px solid @visieBorderBottom; 
 }
 .visie1 h1{
     color: @visieBlockTitleColor;
@@ -190,9 +173,8 @@ Visie
     margin-right: auto;
 }
 
-/**
-Buttons
-*/
+
+//Buttons
 .btn-visie{ 
     border: 1px solid transparent;
     background-color: transparent;  
@@ -219,12 +201,11 @@ Buttons
 
 
 
-/**
-Locations
-*/
+
+//Locations
 .location{
 
- cursor: pointer;  
+   cursor: pointer;  
 }
 .locations{
     background-color: @locationBg;
@@ -248,8 +229,8 @@ Locations
     background-position: center;
 }
 .locations img{
-   height: 40px;
-   width: 60px;
+ height: 40px;
+ width: 60px;
 }
 
 .hoverLocation h1, .hoverLocation h6{
@@ -260,11 +241,10 @@ Locations
     visibility: hidden;
 }
 
-/*
-Parrallel scroling
-*/
+
+//Parrallel scroling
 #visie2{
- background-image: url(../images/visie-butterfly.jpg);
+   background-image: url(../images/visie-butterfly.jpg);
 }
 #visie3{ 
     background-image: url(../images/visie3.jpg);
@@ -292,15 +272,13 @@ Parrallel scroling
     right: 30px;  
 }
 .butterfly3{
- position: absolute;
- left: 350px;  
+   position: absolute;
+   left: 350px;  
 }
 
 
-/**
-Arrow block
-*/
 
+//Arrow block
 .arrowBlock{
     padding-bottom: 5%;
 }
@@ -315,26 +293,32 @@ Arrow block
     font-size: 1.5em;
 }
 
-/**
-Calendar
-*/
+
+//Calendar
 .calendar{
     background-color: @locationBg;
 }
-
+.calendar-items{
+    background-color: @orange;
+}
 .calender-item{
-    height: 120px;
+    height: 200px;
     padding: 2% 3%;
 }
+.calender-item:hover, .item:hover{
+    background-color: @black;
+    color:@white;
+    cursor: pointer;
+}
 .dayLocation span{
-   font-size: 1.25em;
+ font-size: 1.25em;
 }
 .calender-item .day{
     font-family: 'signika-bold';
     text-transform: uppercase;
     
 }
-.calender-item .city{
+.calender-item.white .city{
     color: @visieBlockTextColor;
 
 }
@@ -361,8 +345,6 @@ Calendar
     border:1px solid @dark-pagination-color;
 }
 .less-activities-btn{
-
-
     color: #828282;
     background-color: transparent;
 
@@ -395,50 +377,7 @@ Calendar
 .calendar .col-xs-6{
     width: 33.33%
 }
-.calendar-items ._1{
-    background-color: @white;
-}
-.calendar-items ._2{
-    background-color: @orange;
-}
-.calendar-items ._2 .city{
-    color:inherit;
-}
-.calendar-items ._2{
-    background-color: @orange;
-}
-.calendar-items ._3{
-    background-color: @white;
-}
-.calendar-items ._4{
-    background-color: @aqua;
-}
-.calendar-items ._4 .city{
-    color:inherit;
-}
 
-.calendar-items ._5{
-    background-color: @white;
-}
-.calendar-items ._6{
-    background-color: @yellow;
-}
-.calendar-items ._6 .city{
-    color:inherit;
-}
-.calendar-items ._7{
-    background-color: @white;
-}
-
-.calendar-items ._8{
-    background-color: @red;
-}
-.calendar-items ._8 .city{
-    color:inherit;
-}
-.calendar-items ._9{
-    background-color: @white;
-}
 
 /* 
 Artikels 
@@ -452,7 +391,6 @@ Artikels
 
 .item {
     float: left;
-    background-color: @white; 
 }
 
 .item, .grid-sizer { 
@@ -471,14 +409,13 @@ Artikels
     padding: 8% 4% 4% 4%;
     font-size: 1.5em;
 }
+//mobile: articels are grouped per 6
+//article batch 1
 .item._1{
     height: @arikel-long;
-    background-color: @black;
-    color: @white;
 }
 .item._2{
     height: @arikel-short;
-    background-color: @orange;
 }
 .item._3{
     height: @arikel-long;
@@ -488,21 +425,18 @@ Artikels
 }
 .item._5{
     height: @arikel-short;
-    background-color: @aqua;
 }
 .item._6{
     height: @arikel-short;
-    background-color: @black;
-    color: @white;
 }
+
+//article batch 2
 .item._7{
     height: @arikel-long;
 }
 .item._8{
     height: @arikel-short;
-    background-color: @red;
 }
-
 .item._9{
     height: @arikel-long;
 }
@@ -511,29 +445,26 @@ Artikels
 }
 .item._11{
     height: @arikel-short;
-    background-color: @yellow;
 }
 .item._12{
     height: @arikel-short;
-    background-color: @aqua;
 }
+//article batch 3
+//last 4 are arranged different than normal to occupied all space
 .item._13{
-    display: none;
+    height: @arikel-long;
 }
 .item._14{
-    display: none;
+    height: @arikel-short;
 }
 .item._15{
-    display: none;
+    height: @arikel-long;
 }
 .item._16{
-    display: none;
+    height: @arikel-short;
 }
 
-/**
-Breeze fm block
-*/
-
+//Breeze fm block
 .breezefm-block{
     background-color: @welcomeTextColor;
     color: @visieBlockTextColor;
@@ -629,9 +560,9 @@ ul.socialMediaIcons{
     padding-left: 0;
 }
 ul.socialMediaIcons li{
-   display: block;
-   float:left;
-   background-color: @socialMedaieIconBg;
+ display: block;
+ float:left;
+ background-color: @socialMedaieIconBg;
 }
 ul.socialMediaIcons li a{
     display: block;
@@ -672,8 +603,8 @@ ul.footerMenuRight li.first{
     margin-left: 0px;
 }
 ul.footerMenuRight li a{
-   color:@footerSloganColor;
-   text-decoration: none;
+ color:@footerSloganColor;
+ text-decoration: none;
 }
 ul.footerMenuLeft img{
     width: 70%

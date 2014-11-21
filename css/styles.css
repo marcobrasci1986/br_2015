@@ -8,7 +8,7 @@ Visie Block
 Locations
 */
 /**
-Colors
+Colors 
 */
 /*
 Calendar Pagination
@@ -27,17 +27,27 @@ body {
   margin: 0;
   padding: 0;
 }
-/**
-    Main image
-    */
+.row {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
 .banner {
   height: 100%;
 }
-.main-text {
+.main-image {
+  background-image: url(../images/home-image.jpg);
+}
+.welcome-breeze-text {
   width: 80%;
-  height: 167px;
   text-align: center;
   color: #f7f7f7;
+}
+.welcome-breeze-height {
+  height: 200px;
+}
+.welcomeText {
+  font-size: 68px;
 }
 .imagePlay {
   position: absolute;
@@ -50,12 +60,6 @@ body {
 .navMargin {
   top: 50px !important;
 }
-.main-image {
-  background-image: url(../images/home-image.jpg);
-}
-/**
-    Navigation
-    */
 #navmain {
   background-color: #262626;
   text-transform: uppercase;
@@ -72,19 +76,12 @@ body {
   background-color: #2e2e2e;
   font-family: 'signika-bold';
 }
-/**
-
-*/
-.row {
-  width: initial;
-  margin: 0;
+.navbar-inverse {
+  border-color: #3d3d3d;
 }
 .breeze-block {
   padding: 9% 0;
 }
-/*
-Colors
-*/
 .white {
   background-color: #ffffff;
 }
@@ -104,15 +101,9 @@ Colors
   background-color: #3d3d3d;
   color: #ffffff;
 }
-/**
-Nav
-*/
-.navbar-inverse {
-  border-color: #3d3d3d;
+.lightGrey {
+  background-color: #f7f7f7;
 }
-/*
-Video + play button
-*/
 .videoWrapper {
   position: relative;
 }
@@ -136,12 +127,6 @@ Video + play button
 .videoPlayImg {
   width: 2%;
 }
-/**********************
-Header
-**********************/
-.welcomeText {
-  font-size: 60px;
-}
 .welcomeTextWrapper {
   text-align: center;
 }
@@ -155,16 +140,12 @@ Header
 .nav a {
   font-size: 3em;
 }
-/**
-Visie
-*/
 .visieBlock {
   text-align: center;
   position: relative;
 }
 .visie1 {
   background-color: #f7f7f7;
-  border-bottom: 1px solid #dcdcdc;
 }
 .visie1 h1 {
   color: #3c3c3c;
@@ -192,9 +173,6 @@ Visie
   margin-left: auto;
   margin-right: auto;
 }
-/**
-Buttons
-*/
 .btn-visie {
   border: 1px solid transparent;
   background-color: transparent;
@@ -218,9 +196,6 @@ Buttons
   color: #f7f7f7;
   border-color: #f7f7f7;
 }
-/**
-Locations
-*/
 .location {
   cursor: pointer;
 }
@@ -255,9 +230,6 @@ Locations
 .hoverLocation img {
   visibility: hidden;
 }
-/*
-Parrallel scroling
-*/
 #visie2 {
   background-image: url(../images/visie-butterfly.jpg);
 }
@@ -288,9 +260,6 @@ Parrallel scroling
   position: absolute;
   left: 350px;
 }
-/**
-Arrow block
-*/
 .arrowBlock {
   padding-bottom: 5%;
 }
@@ -304,15 +273,21 @@ Arrow block
 .arrow {
   font-size: 1.5em;
 }
-/**
-Calendar
-*/
 .calendar {
   background-color: #f0f0f0;
 }
+.calendar-items {
+  background-color: #e69f55;
+}
 .calender-item {
-  height: 120px;
+  height: 200px;
   padding: 2% 3%;
+}
+.calender-item:hover,
+.item:hover {
+  background-color: #3d3d3d;
+  color: #ffffff;
+  cursor: pointer;
 }
 .dayLocation span {
   font-size: 1.25em;
@@ -321,7 +296,7 @@ Calendar
   font-family: 'signika-bold';
   text-transform: uppercase;
 }
-.calender-item .city {
+.calender-item.white .city {
   color: #a0a0a0;
 }
 .calender-item .date {
@@ -373,48 +348,6 @@ Calendar
 .calendar .col-xs-6 {
   width: 33.33%;
 }
-.calendar-items ._1 {
-  background-color: #ffffff;
-}
-.calendar-items ._2 {
-  background-color: #e69f55;
-}
-.calendar-items ._2 .city {
-  color: inherit;
-}
-.calendar-items ._2 {
-  background-color: #e69f55;
-}
-.calendar-items ._3 {
-  background-color: #ffffff;
-}
-.calendar-items ._4 {
-  background-color: #78b096;
-}
-.calendar-items ._4 .city {
-  color: inherit;
-}
-.calendar-items ._5 {
-  background-color: #ffffff;
-}
-.calendar-items ._6 {
-  background-color: #e1bf5c;
-}
-.calendar-items ._6 .city {
-  color: inherit;
-}
-.calendar-items ._7 {
-  background-color: #ffffff;
-}
-.calendar-items ._8 {
-  background-color: #d46c5b;
-}
-.calendar-items ._8 .city {
-  color: inherit;
-}
-.calendar-items ._9 {
-  background-color: #ffffff;
-}
 /* 
 Artikels 
 */
@@ -423,7 +356,6 @@ Artikels
 }
 .item {
   float: left;
-  background-color: #ffffff;
 }
 .item,
 .grid-sizer {
@@ -444,12 +376,9 @@ Artikels
 }
 .item._1 {
   height: 200px;
-  background-color: #3d3d3d;
-  color: #ffffff;
 }
 .item._2 {
   height: 100px;
-  background-color: #e69f55;
 }
 .item._3 {
   height: 200px;
@@ -459,19 +388,15 @@ Artikels
 }
 .item._5 {
   height: 100px;
-  background-color: #78b096;
 }
 .item._6 {
   height: 100px;
-  background-color: #3d3d3d;
-  color: #ffffff;
 }
 .item._7 {
   height: 200px;
 }
 .item._8 {
   height: 100px;
-  background-color: #d46c5b;
 }
 .item._9 {
   height: 200px;
@@ -481,27 +406,22 @@ Artikels
 }
 .item._11 {
   height: 100px;
-  background-color: #e1bf5c;
 }
 .item._12 {
   height: 100px;
-  background-color: #78b096;
 }
 .item._13 {
-  display: none;
+  height: 200px;
 }
 .item._14 {
-  display: none;
+  height: 100px;
 }
 .item._15 {
-  display: none;
+  height: 200px;
 }
 .item._16 {
-  display: none;
+  height: 100px;
 }
-/**
-Breeze fm block
-*/
 .breezefm-block {
   background-color: #f7f7f7;
   color: #a0a0a0;

@@ -13,5 +13,4 @@ include_once("templateFiles/header.php");
 
 <?php
 include_once("templateFiles/footer.php");
-include_once("templateFiles/scripts-artikel.php");
 ?>

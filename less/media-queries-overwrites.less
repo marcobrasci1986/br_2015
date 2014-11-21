@@ -6,20 +6,21 @@
 	body { 
 		font-size:100%;     
 	}
-	/**
-	Navigation
-	*/
+	
+	//Navigation
 	.nav a{
 		font-size: 1.5em;
 	}
+
+	//Main image
 	.welcomeText{
-
-		font-size: 62px;
+		font-size: 110px;
 	}
-
-	/*
-	Visie 1
-	*/
+	.welcome-breeze-text{
+		height: 295px;
+	}
+	
+	//Visie 1
 	.visieBlock h1{
 		width: @visieTitleWidth - 30;
 	}
@@ -30,7 +31,8 @@
 	}
 	.row{
 		width: 70%;
-		margin: auto;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.location{
 		width: 20%;
@@ -49,130 +51,64 @@
 	.calendar .col-xs-6{
 		width: 25%;
 	}
-	//Calendar colors
-	.calendar-items ._1{
-		background-color: @white;
-	}
-	.calendar-items ._2{
-		background-color: @orange;
-	}
-	.calendar-items ._2 .city{
-		color:inherit;
-	}
-	.calendar-items ._2{
-		background-color: @orange;
-	}
-	.calendar-items ._3{
-		background-color: @white;
-	}
-	.calendar-items ._4{
-		background-color: @aqua;
-	}
-	.calendar-items ._4 .city{
-		color:inherit;
-	}
-
-	.calendar-items ._5{
-		background-color: @yellow;
-	}
-	.calendar-items ._5 .city{
-		color:inherit;
-	} 
-	.calendar-items ._6{
-		background-color: @white;
-	}
-	.calendar-items ._6 .city{
-		color:inherit; 
-	}
-	.calendar-items ._7{
-		background-color: @red;
-	}
-	.calendar-items ._7 .city{
-		color:inherit;
-	}
-	.calendar-items ._8{
-		background-color: @white;
-	}
-	.calendar-items ._9{
-		display: none;
-	}
+	
 	.calendar .rowHeight{
 		height: 195px;
 	}
 
+	//Articles
 	.item, .grid-sizer { 
 		width: 25%;
 	}
 	.item._1{
 		height: @arikel-long + 75px;
-		background-color: @black;
-		color: @white;
 	}
 	.item._2{
 		height: @arikel-short + 50px;
-		background-color: @orange;
 	}
 	.item._3{
 		height: @arikel-long + 75px;
-		background-color: @white;
 	}
 	.item._4{
 		height: @arikel-short + 50px;
-		background-color: @aqua;
 	}
 	.item._5{
 		height: @arikel-long + 75px;
-		background-color: @white;
 	}
 	.item._6{
 		height: @arikel-long + 75px;
 	}
 	.item._7{
 		height: @arikel-short + 50px;
-		background-color: @red;
 	}
 	.item._8{
 		height: @arikel-short + 50px;
-		background-color: @yellow;
 	}
-
 	.item._9{
 		height: @arikel-long + 75px;
-		background-color: @white;
 	}
 	.item._10{
 		height: @arikel-short + 50px;
-		background-color: @yellow;
 	}
 	.item._11{
 		height: @arikel-long + 75px;
-		background-color: @white;
 	}
 	.item._12{
 		height: @arikel-short + 50px;
-		background-color: @red;
 	}
 	.item._13{
-		display: block;
 		height: @arikel-long + 75px;
-		background-color: @white;
 	}
 	.item._14{
-		display: block;
 		height: @arikel-long + 75px;
-		background-color: @white;
 	}
 	.item._15{
-		display: block;
 		height: @arikel-short + 50px;
-		background-color: @orange;
 	}
 	.item._16{
-		display: block;
 		height: @arikel-short + 50px;
-		background-color: @aqua;
 	}
-
+	//Breeze FM
 	.breeze-fm-main{
 		width: 100%;
 	}
@@ -210,7 +146,7 @@
 	.navbar-nav.navbar-right:last-child{
 		margin-right: 15px;
 	}
-
+	//Footer
 	ul.footerMenuRight{
 
 		float: right;
@@ -219,7 +155,7 @@
 	ul.footerMenuLeft img{
 		width: 100%
 	}
-	.verticalLine {
+	.verticalLine { 
 		border-left: 1px solid @white;
 		height: 30px;
 		margin-left: 30px;
@@ -266,63 +202,94 @@
 		width: 32px;
 	}
 
-	.main-text{
-		height: 269px;
-	}
-	.welcomeText {
-		font-size: 105px;
-	}
 
-	/* Medium devices (desktops, 992px and up) */
-	@media (min-width: 992px) { 
-		body { 
-			font-size:120%; 
-		}
-		.nav a{
-			font-size: 1em;
-		}
-		.visieBlock h1{
-			width: @visieTitleWidth - 40;
-		}
-		.location{
-			width: 20%;
-		}
-		.calendar .rowHeight{
-			height: 240px;
-		}
-		.background-wave-size{
-			background-size: 17px;
-		}
-		.broadcast-wrapper{
-			width: 200px;
-		}
-		.footerLogo{
-			padding-top: @footerLogoTopPadding - 10;
-		}
-		ul.socialMediaIcons{
-			padding-top: @footerSocialMediaTopPadding - 7;
-		}
 
+	//Visie
+	.visieText{
+		font-size: 190px;
+	}
+	.welcome-visie-height{
+		height: 265px;
+	}
+	.vertical-align {
+		display: flex;
+		align-items: center;
+	}
+	.visie-list-icon{
+		text-align: right;
+	}
+	.va-text{
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
 	}
 
-	/* Large devices (large desktops, 1200px and up) */
-	@media (min-width: 1200px) { 
-		body { 
-			font-size:150%;
-		}
-		.nav a{
-			font-size: 1em;
-		}
+	.visie-item .icon{
+		text-align: right;
+		-webkit-transform:none;
+		transform:none;
+	}
+
+	.visie-item .slogan-wrapper{
+		font-size: 1.5em;
+	}
 
 
-		.location{
-			width: 20%;
-		}
-		.calendar .rowHeight{
-			height: 240px;
-		}
-		.background-wave-size{
-			background-size: 20px;
-		}
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+	body { 
+		font-size:120%; 
+	}
+	.nav a{
+		font-size: 1em;
+	}
+	.visieBlock h1{
+		width: @visieTitleWidth - 40;
+	}
+	.location{
+		width: 20%;
+	}
+	.calender-item{
+		height: 300px;
+	}
+	.calendar .rowHeight{
+		height: 240px;
+	}
+	.background-wave-size{
+		background-size: 17px;
+	}
+	.broadcast-wrapper{
+		width: 200px;
+	}
+	.footerLogo{
+		padding-top: @footerLogoTopPadding - 10;
+	}
+	ul.socialMediaIcons{
+		padding-top: @footerSocialMediaTopPadding - 7;
+	}
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+	body { 
+		font-size:150%;
+	}
+	.nav a{
+		font-size: 1em;
+	}
+
+
+	.location{
+		width: 20%;
+	}
+	.calendar .rowHeight{
+		height: 240px;
+	}
+	.background-wave-size{
+		background-size: 20px;
 	}
 }

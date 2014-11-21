@@ -3,10 +3,9 @@ include_once("templateFiles/header.php");
 ?>
 
 <div class="banner main-image">
-    <div class="centerAbsolute main-text navMargin">
+    <div class="centerAbsolute welcome-breeze-text welcome-breeze-height navMargin">
         <h1 class="welcomeText">'Welkom <br> bij Breeze,</h1>
     </div>
-
     <a class="various fancybox.iframe" href="http://www.youtube.com/embed/L9szn1QQfas?autoplay=1&showinfo=0">
         <div class="videoPlay centerAbsolute navMargin">
             <img src="images/play.png" class="imagePlay">
@@ -19,7 +18,7 @@ include_once("templateFiles/header.php");
 
 
 <!-- VISIE BLOCK 1-->
-<div class="container-fliud visieBlock visie1 breeze-block">
+<div class="container-fliud visieBlock visie1 breeze-block border-bottom-grey">
     <h1>Wij zijn een groep jonge mensen met een passie voor Jezus</h1>
     <h6>Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent sed lobortis diam. Pellentesque nec luctus urna. Suspendisse sollicitudin augue a justo ornare lobortis.</h6>
     <button class="btn-visie btn-grey" type="button">
@@ -75,18 +74,15 @@ include_once("templateFiles/header.php");
 
 <!-- VISIE 2-->
 <div  class="container-fliud textColorWhite">
-<!--     <img class="butterfly1" src="images/butterfly1.png" data-stellar-ratio="1.1" data-stellar-vertical-offset="-200" ></img>
-    <img class="butterfly2" src="images/butterfly2.png" data-stellar-ratio="1.5" data-stellar-vertical-offset="-55"></img> 
-    <img class="butterfly3" src="images/butterfly3.png" data-stellar-ratio="1.5" data-stellar-vertical-offset="-400"></img>  -->   
-    <div id="visie2" class="parralax-image" data-stellar-background-ratio="0.1" > 
-        <div class="visieBlock breeze-block">
-            <h1>Wij zijn een groep jonge mensen met een passie voor Jezus</h1>
-            <h6>Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent sed lobortis diam. Pellentesque nec luctus urna. Suspendisse sollicitudin augue a justo ornare lobortis.</h6>
-            <button class="btn-visie btn-white" type="button">
-                Onze Visie
-            </button>
-        </div>
+  <div id="visie2" class="parralax-image" data-stellar-background-ratio="0.1" > 
+    <div class="visieBlock breeze-block">
+        <h1>Wij zijn een groep jonge mensen met een passie voor Jezus</h1>
+        <h6>Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent sed lobortis diam. Pellentesque nec luctus urna. Suspendisse sollicitudin augue a justo ornare lobortis.</h6>
+        <button class="btn-visie btn-white" type="button">
+            Onze Visie
+        </button>
     </div>
+</div>
 </div>
 
 
@@ -99,7 +95,7 @@ include_once("templateFiles/header.php");
     </div>
 
     <div class="row calendar-items">
-        <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 calender-item _1">
+        <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 calender-item white">
             <div>
                 <span class="day">ZA</span>
                 <span class="city"> / Leuven</span>
@@ -113,7 +109,7 @@ include_once("templateFiles/header.php");
         </div>
 
     </div>        
-    <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 calender-item _2">
+    <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 calender-item orange">
         <div>
             <span class="day">MA</span>
             <span class="city"> / Hasselt</span>
@@ -127,7 +123,7 @@ include_once("templateFiles/header.php");
         </div>
 
     </div>        
-    <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 calender-item _3">
+    <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 calender-item aqua">
         <div>
             <span class="day">ZO</span>
             <span class="city"> / Uw huiskamer</span>
@@ -141,7 +137,7 @@ include_once("templateFiles/header.php");
         </div>
 
     </div>        
-    <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 calender-item _4">
+    <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 calender-item yellow">
         <div>
             <span class="day">DO</span>
             <span class="city"> / Antwerpen</span>
@@ -155,7 +151,7 @@ include_once("templateFiles/header.php");
         </div>
     </div>
 
-    <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 calender-item _5">
+    <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 calender-item red">
         <div>
             <span class="day">DO</span>
             <span class="city"> / Antwerpen</span>
@@ -168,7 +164,7 @@ include_once("templateFiles/header.php");
             Gebedsavond, door gebed staan we sterk!
         </div>
     </div>        
-    <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 calender-item _6">
+    <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 calender-item white">
         <div>
             <span class="day">ZO</span>
             <span class="city"> / Uw huiskamer</span>
@@ -181,7 +177,7 @@ include_once("templateFiles/header.php");
             Touché, lofprijs en studies die raken
         </div>
     </div>        
-    <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 calender-item _7">
+    <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 calender-item orange">
         <div>
             <span class="day">MA</span>
             <span class="city"> / Hasselt</span>
@@ -194,7 +190,7 @@ include_once("templateFiles/header.php");
             Touché, lofprijs en studies die raken
         </div>
     </div>        
-    <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 calender-item _8">
+    <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 calender-item white">
         <div>
             <span class="day">MA</span>
             <span class="city"> / Hasselt</span>
@@ -207,7 +203,7 @@ include_once("templateFiles/header.php");
             Touché, lofprijs en studies die raken
         </div>
     </div>
-    <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 calender-item _9">
+<!--     <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 calender-item yellow">
         <div>
             <span class="day">MA</span>
             <span class="city"> / Hasselt</span>
@@ -219,7 +215,7 @@ include_once("templateFiles/header.php");
         <div class="description">
             Touché, lofprijs en studies die raken
         </div>
-    </div>
+    </div> -->
 </div>
 
 <div class="custom-pagination">
@@ -256,90 +252,90 @@ include_once("templateFiles/header.php");
     <div id="artikels" class="row">
       <div class="grid-sizer"></div>
 
-      <div class="item _1">
+      <div class="item _1 white">
         <div class="date">2014.05.13</div>
         <div class="author">johan menheere</div>
         <h1>Waarom stierf Jesus aan het kruis voor ons?</h1>
     </div>
-    <div class="item _2">
+    <div class="item _2 yellow">
      <div class="date">2014.05.13</div>
      <div class="author">johan menheere</div>
      <h1>Waarom stierf Jesus aan het kruis voor ons?</h1>
  </div>
- <div class="item _3">            
+ <div class="item _3 red">            
     <div class="date">2014.01.01</div>
     <div class="author">becky cauwels</div>
     <h1>Launch nieuwe website</h1>
 </div>
-<div class="item _4">
+<div class="item _4 white">
     <div class="date">2014.01.01</div>
     <div class="author">becky cauwels</div>
     <h1>Spetterende opening van het nieuwe seizoen</h1>
 </div>
 
-<div class="item _5">
+<div class="item _5 white">
 
     <div class="date">2014.05.13</div>
     <div class="author">johan menheere</div>
     <h1>Waarom stierf Jesus aan het kruis voor ons?</h1>
 </div>
-<div class="item _6">
+<div class="item _6 white">
     <div class="date">2014.01.01</div>
     <div class="author">becky cauwels</div>
     <h1>Launch nieuwe website</h1>
 </div>
-<div class="item _7">
+<div class="item _7 aqua">
     <div class="date">2014.01.01</div>
     <div class="author">becky cauwels</div>
     <h1>Spetterende opening van het nieuwe seizoen</h1>
 </div>
-<div class="item _8">
+<div class="item _8 orange">
     <div class="date">2014.02.13</div>
     <div class="author">john doe</div>
     <h1>Touché gaat van start vaf februari 2015</h1>
 </div> 
-
-<div class="item _9">
+<div class="item _9 white">
     <div class="date">2014.05.13</div>
     <div class="author">johan menheere</div>
     <h1>Waarom stierf Jesus aan het kruis voor ons?</h1>
 </div>
-<div class="item _10">
-    <div class="date">2014.01.01</div>
-    <div class="author">becky cauwels</div>
-    <h1>Launch nieuwe website</h1>
-</div>
-<div class="item _11">
-    <div class="date">2014.01.01</div>
-    <div class="author">becky cauwels</div>
-    <h1>Spetterende opening van het nieuwe seizoen</h1>
-</div>
-<div class="item _12">
-    <div class="date">2014.02.13</div>
-    <div class="author">john doe</div>
-    <h1>Touché gaat van start vaf februari 2015</h1>
-</div>
-
-<div class="item _13">
-    <div class="date">2014.05.13</div>
-    <div class="author">johan menheere</div>
-    <h1>Waarom stierf Jesus aan het kruis voor ons?</h1>
-</div>
-<div class="item _14">
+<div class="item _10 orange">
  <div class="date">2014.05.13</div>
  <div class="author">johan menheere</div>
  <h1>Waarom stierf Jesus aan het kruis voor ons?</h1>
 </div>
-<div class="item _15">
+<div class="item _11 red">            
     <div class="date">2014.01.01</div>
     <div class="author">becky cauwels</div>
     <h1>Launch nieuwe website</h1>
 </div>
-<div class="item _16">
+<div class="item _12 white">
+    <div class="date">2014.01.01</div>
+    <div class="author">becky cauwels</div>
+    <h1>Spetterende opening van het nieuwe seizoen</h1>
+</div>
+
+<div class="item _13 aqua">
+    <div class="date">2014.05.13</div>
+    <div class="author">johan menheere</div>
+    <h1>Waarom stierf Jesus aan het kruis voor ons?</h1>
+</div>
+<div class="item _14 yellow">
     <div class="date">2014.01.01</div>
     <div class="author">becky cauwels</div>
     <h1>Launch nieuwe website</h1>
-</div> 
+</div>
+<div class="item _15 white">
+    <div class="date">2014.01.01</div>
+    <div class="author">becky cauwels</div>
+    <h1>Spetterende opening van het nieuwe seizoen</h1>
+</div>
+<div class="item _16 red">
+    <div class="date">2014.02.13</div>
+    <div class="author">john doe</div>
+    <h1>Touché gaat van start vaf februari 2015</h1>
+</div>  
+
 
 
 
@@ -425,7 +421,8 @@ include_once("templateFiles/header.php");
 
 
 
+
+
 <?php
 include_once("templateFiles/footer.php");
-include_once("templateFiles/scripts-index.php");
 ?>

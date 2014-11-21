@@ -9,7 +9,7 @@ Visie Block
 Locations
 */
 /**
-Colors
+Colors 
 */
 /*
 Calendar Pagination
@@ -27,18 +27,15 @@ Footer
   body {
     font-size: 100%;
   }
-  /**
-	Navigation
-	*/
   .nav a {
     font-size: 1.5em;
   }
   .welcomeText {
-    font-size: 62px;
+    font-size: 110px;
   }
-  /*
-	Visie 1
-	*/
+  .welcome-breeze-text {
+    height: 295px;
+  }
   .visieBlock h1 {
     width: 40%;
   }
@@ -48,7 +45,8 @@ Footer
   }
   .row {
     width: 70%;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
   .location {
     width: 20%;
@@ -65,51 +63,6 @@ Footer
   .calendar .col-xs-6 {
     width: 25%;
   }
-  .calendar-items ._1 {
-    background-color: #ffffff;
-  }
-  .calendar-items ._2 {
-    background-color: #e69f55;
-  }
-  .calendar-items ._2 .city {
-    color: inherit;
-  }
-  .calendar-items ._2 {
-    background-color: #e69f55;
-  }
-  .calendar-items ._3 {
-    background-color: #ffffff;
-  }
-  .calendar-items ._4 {
-    background-color: #78b096;
-  }
-  .calendar-items ._4 .city {
-    color: inherit;
-  }
-  .calendar-items ._5 {
-    background-color: #e1bf5c;
-  }
-  .calendar-items ._5 .city {
-    color: inherit;
-  }
-  .calendar-items ._6 {
-    background-color: #ffffff;
-  }
-  .calendar-items ._6 .city {
-    color: inherit;
-  }
-  .calendar-items ._7 {
-    background-color: #d46c5b;
-  }
-  .calendar-items ._7 .city {
-    color: inherit;
-  }
-  .calendar-items ._8 {
-    background-color: #ffffff;
-  }
-  .calendar-items ._9 {
-    display: none;
-  }
   .calendar .rowHeight {
     height: 195px;
   }
@@ -119,71 +72,51 @@ Footer
   }
   .item._1 {
     height: 275px;
-    background-color: #3d3d3d;
-    color: #ffffff;
   }
   .item._2 {
     height: 150px;
-    background-color: #e69f55;
   }
   .item._3 {
     height: 275px;
-    background-color: #ffffff;
   }
   .item._4 {
     height: 150px;
-    background-color: #78b096;
   }
   .item._5 {
     height: 275px;
-    background-color: #ffffff;
   }
   .item._6 {
     height: 275px;
   }
   .item._7 {
     height: 150px;
-    background-color: #d46c5b;
   }
   .item._8 {
     height: 150px;
-    background-color: #e1bf5c;
   }
   .item._9 {
     height: 275px;
-    background-color: #ffffff;
   }
   .item._10 {
     height: 150px;
-    background-color: #e1bf5c;
   }
   .item._11 {
     height: 275px;
-    background-color: #ffffff;
   }
   .item._12 {
     height: 150px;
-    background-color: #d46c5b;
   }
   .item._13 {
-    display: block;
     height: 275px;
-    background-color: #ffffff;
   }
   .item._14 {
-    display: block;
     height: 275px;
-    background-color: #ffffff;
   }
   .item._15 {
-    display: block;
     height: 150px;
-    background-color: #e69f55;
   }
   .item._16 {
-    display: block;
     height: 150px;
-    background-color: #78b096;
   }
   .breeze-fm-main {
     width: 100%;
@@ -265,16 +198,35 @@ Footer
     margin-left: -16px;
     width: 32px;
   }
-  .main-text {
-    height: 269px;
+  .visieText {
+    font-size: 190px;
   }
-  .welcomeText {
-    font-size: 105px;
+  .welcome-visie-height {
+    height: 265px;
   }
-  /* Medium devices (desktops, 992px and up) */
-  /* Large devices (large desktops, 1200px and up) */
+  .vertical-align {
+    display: flex;
+    align-items: center;
+  }
+  .visie-list-icon {
+    text-align: right;
+  }
+  .va-text {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+  .visie-item .icon {
+    text-align: right;
+    -webkit-transform: none;
+    transform: none;
+  }
+  .visie-item .slogan-wrapper {
+    font-size: 1.5em;
+  }
 }
-@media (min-width: 768px) and (min-width: 992px) {
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
   body {
     font-size: 120%;
   }
@@ -286,6 +238,9 @@ Footer
   }
   .location {
     width: 20%;
+  }
+  .calender-item {
+    height: 300px;
   }
   .calendar .rowHeight {
     height: 240px;
@@ -303,7 +258,8 @@ Footer
     padding-top: 3%;
   }
 }
-@media (min-width: 768px) and (min-width: 1200px) {
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
   body {
     font-size: 150%;
   }

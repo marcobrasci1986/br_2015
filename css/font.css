@@ -42,3 +42,9 @@ h1 {
 .bold {
   font-family: 'signika-bold';
 }
+.regular {
+  font-family: 'signika-regular';
+}
+.light {
+  font-family: 'signika-light';
+}
