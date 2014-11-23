@@ -5,11 +5,28 @@ html,body {
     margin:0;
     padding:0;
 }
-.row{
+.force-row{
     width: 80%;
     margin-left: auto;
     margin-right: auto;
 
+}
+ul li{
+    list-style: none;
+}
+a{
+    color: @linkcolor;
+}
+a:hover{
+    color: @linkcolor;
+}
+
+
+
+
+.special-bg{
+    background-image: url(../images/special-bg.png);
+    background-size: cover;
 }
 
 //Main image
@@ -38,9 +55,7 @@ html,body {
  margin-left: -8px;
  width: 16px;
 }
-.navMargin{
-    top: 50px !important;
-}
+
 
 
 
@@ -97,22 +112,23 @@ html,body {
 .videoWrapper{
     position: relative;
 }
-.videoPlay{
+.video-play{
     height: @playWidth;
     width: @playHeight;
     border: 1px solid @borderPlayButton;
     background-color: rgba(165,190,189,0.5);
 }
-.videoPlay:hover{
+.video-play:hover{
     background-color: @playMouseOver;
     opacity: 1;
 }
-.videoPlay-image{
+.video-play-image{
     height: 50px;
     width: 50px;
+}
+.video-play-color{
     border: 1px solid #bed2d1;
-    background-color: #a5bebd;
-    opacity: 0.5;
+    background-color: rgba(165, 190, 189, 0.5);
 }
 .videoPlayImg{
     width: 2%;
@@ -141,7 +157,6 @@ html,body {
 //Visie
 .visieBlock{
     text-align: center;
-    position: relative;
 }
 .visie1{
     background-color: @welcomeTextColor; 
@@ -151,11 +166,7 @@ html,body {
     
 }
 
-.visieBlock h1{
-    width: @visieTitleWidth;
-}
 .visieBlock h6{
-    width: @visieTitleWidth - 20;
     margin-top: @visieBlockMarginTop;
     font-family: 'signika-light';
 }
@@ -168,7 +179,7 @@ html,body {
 .visieBlock button{
     margin-top: @visieBlockMarginTop;
 }
-.visieBlock h1, .visieBlock h6, .visieBlock button{
+.visieBlock button{
     margin-left: auto;
     margin-right: auto;
 }
@@ -299,7 +310,7 @@ html,body {
     background-color: @locationBg;
 }
 .calendar-items{
-    background-color: @orange;
+    display: inline-block;
 }
 .calender-item{
     height: 200px;
@@ -374,9 +385,6 @@ html,body {
     margin-left: 5px;
 
 }
-.calendar .col-xs-6{
-    width: 33.33%
-}
 
 
 /* 
@@ -410,7 +418,7 @@ Artikels
     font-size: 1.5em;
 }
 //mobile: articels are grouped per 6
-//article batch 1
+//article batch 1 
 .item._1{
     height: @arikel-long;
 }
@@ -427,7 +435,7 @@ Artikels
     height: @arikel-short;
 }
 .item._6{
-    height: @arikel-short;
+    height: @arikel-short; 
 }
 
 //article batch 2
@@ -473,14 +481,11 @@ Artikels
     color: @black;
 }
 .breezefm-block h6{
-    width: 70%;
     margin-top: 3%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .breezefm-block img{
-    width: 50%;
+    width: 100%;
     max-width: 380px;
 }
 
@@ -491,6 +496,10 @@ Artikels
 .video-img-wrapper{
     width: 50%;
     position: relative;
+}
+.video-play-breeze-fm-block{
+    width: 10%;
+    height: 10%;
 }
 .play-video-image{
     width: 4%;
@@ -560,23 +569,27 @@ ul.socialMediaIcons{
     padding-left: 0;
 }
 ul.socialMediaIcons li{
- display: block;
  float:left;
  background-color: @socialMedaieIconBg;
 }
 ul.socialMediaIcons li a{
-    display: block;
     color: @white;
-    padding: 20px;
-
 }
-
-ul.socialMediaIcons li a:hover{
+.social-media-icon{
+    width: 50px;
+    height: 50px;
+    background-color: #3d3d3d;
+}
+.social-media-icon:hover{
     opacity: 0.6;
+    cursor: pointer;
 }
-
 .footerMenuLeft{
     display: none;
+}
+.vertical-align {
+    display: flex;
+    align-items: center;
 }
 
 
@@ -597,6 +610,7 @@ ul.footerMenuRight li{
     display: block;
     margin-left: 30px;
     float: left;
+
 }
 
 ul.footerMenuRight li.first{

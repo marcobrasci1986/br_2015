@@ -27,6 +27,12 @@ Footer
   body {
     font-size: 100%;
   }
+  .display-flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .nav a {
     font-size: 1.5em;
   }
@@ -36,14 +42,11 @@ Footer
   .welcome-breeze-text {
     height: 295px;
   }
-  .visieBlock h1 {
-    width: 40%;
-  }
   .locations img {
     height: initial;
     width: initial;
   }
-  .row {
+  .force-row {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
@@ -71,52 +74,52 @@ Footer
     width: 25%;
   }
   .item._1 {
-    height: 275px;
+    height: 340px;
   }
   .item._2 {
-    height: 150px;
+    height: 170px;
   }
   .item._3 {
-    height: 275px;
+    height: 340px;
   }
   .item._4 {
-    height: 150px;
+    height: 170px;
   }
   .item._5 {
-    height: 275px;
+    height: 340px;
   }
   .item._6 {
-    height: 275px;
+    height: 340px;
   }
   .item._7 {
-    height: 150px;
+    height: 170px;
   }
   .item._8 {
-    height: 150px;
+    height: 170px;
   }
   .item._9 {
-    height: 275px;
+    height: 340px;
   }
   .item._10 {
-    height: 150px;
+    height: 170px;
   }
   .item._11 {
-    height: 275px;
+    height: 340px;
   }
   .item._12 {
-    height: 150px;
+    height: 170px;
   }
   .item._13 {
-    height: 275px;
+    height: 340px;
   }
   .item._14 {
-    height: 275px;
+    height: 340px;
   }
   .item._15 {
-    height: 150px;
+    height: 170px;
   }
   .item._16 {
-    height: 150px;
+    height: 170px;
   }
   .breeze-fm-main {
     width: 100%;
@@ -142,7 +145,6 @@ Footer
   .breezefm-right {
     height: 100%;
     position: absolute;
-    right: 0;
   }
   .btn-onair {
     position: absolute;
@@ -186,7 +188,7 @@ Footer
   ul.socialMediaIcons {
     font-size: 1.5em;
   }
-  .videoPlay {
+  .video-play {
     height: 80px;
     width: 80px;
   }
@@ -204,10 +206,6 @@ Footer
   .welcome-visie-height {
     height: 265px;
   }
-  .vertical-align {
-    display: flex;
-    align-items: center;
-  }
   .visie-list-icon {
     text-align: right;
   }
@@ -224,6 +222,39 @@ Footer
   .visie-item .slogan-wrapper {
     font-size: 1.5em;
   }
+  .event-view-item {
+    height: 250px;
+  }
+  .calendar-view-item {
+    height: 200px;
+  }
+  .article .author {
+    border: none;
+    margin-top: 20px;
+  }
+  .author img {
+    border-radius: 50%;
+    margin-bottom: 10%;
+    width: 50%;
+  }
+  .author {
+    font-size: 0.8em;
+    padding-top: 0%;
+    padding-bottom: 0%;
+  }
+  .author .read-more {
+    margin-bottom: 15%;
+  }
+  ul.social-media-author {
+    padding-top: 10%;
+  }
+  .social-media-icon-author {
+    width: 25px;
+    height: 25px;
+  }
+  .authorline {
+    display: none;
+  }
 }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
@@ -232,9 +263,6 @@ Footer
   }
   .nav a {
     font-size: 1em;
-  }
-  .visieBlock h1 {
-    width: 30%;
   }
   .location {
     width: 20%;

@@ -1,12 +1,117 @@
 @import "variables.less";
 
-.article h1{
-	color: @visieBlockTitleColor;
-}
-
-.article h6{
-	color:@visieBlockTextColor;
+.nav-margin{
+	margin-top: 50px;
 }
 .articleLine{
 	border-bottom: 3px solid @articleLineColor;
 }
+
+.article-title h1{
+	color: @visieBlockTitleColor;
+	font-size: 4em;
+}
+.article-title h6{
+	font-family: 'signika-light';
+	color: @visieBlockTextColor;
+	font-size: 1.25em;
+}
+.article{
+	background-color: @welcomeTextColor;
+	text-align: justify;
+}
+.article p{
+	color:@visieBlockTextColor;
+}
+.article-content li:before {    
+	font-family: 'FontAwesome';
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	content: '\f04b';
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+
+	margin:0 5px 0 -15px;
+	color: @linkcolor;
+}
+blockquote{
+	width: 40%;
+	margin: 0 2% 2% 0;
+	float: right;
+	font-size: 1.5em;
+	font-family: 'signika-bold';
+	-webkit-font-smoothing: antialiased;
+	text-transform: uppercase; 
+	border: none;
+	text-align: left;
+}
+
+.author img{
+	border-radius: 50%;
+	margin-bottom: 3%;
+	width: 25%;
+}
+.author{
+	font-size: 1.5em; 
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+.author .author-name{
+	font-family: 'signika-bold';
+}
+.author .author-function{
+	font-family: 'signika-light';
+	color: @visieBlockTextColor;
+	font-size: 0.85em;
+}
+.author .read-more{
+	cursor: pointer;
+	display: inline-block;
+	margin-bottom: 4%;
+}
+.circle {
+	border-radius: 50%;
+	display: inline-block;
+	width: 7px;
+	height: 7px;
+	background: #000;
+}
+.author-label{
+	color: @visieBlockTextColor;
+	font-size: 0.85em;
+}
+.author-label-value{
+	color: @default-color;
+	font-size: 0.85em;
+}
+
+.social-media-icon-author{
+	width: 30px;
+	height: 30px;
+}
+.social-media-icon-author:hover{
+	opacity: 0.6;
+	cursor: pointer;
+}
+
+
+ul.social-media-author{
+	display: inline-block;
+	color:@white;
+	padding-left: 0;
+	font-size: 1.25em;
+	margin-bottom: 0px;
+}
+ul.social-media-author li{
+	float:left;
+	background-color: @socialMedaieIconBg;
+}
+ul.social-media-author li:not(:first-child){
+	margin-left: 4px;
+}
+ul.social-media-author li a{
+	color: @white;
+}
+
+

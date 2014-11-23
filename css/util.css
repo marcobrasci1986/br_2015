@@ -35,7 +35,7 @@ Footer
   bottom: 0;
   right: 0;
 }
-.noContainerPadding {
+.no-padding {
   padding-left: 0px;
   padding-right: 0px;
 }
@@ -69,4 +69,7 @@ Footer
 }
 .sink-in-footer {
   margin-bottom: -40px;
+}
+.debug {
+  border: 1px solid black;
 }

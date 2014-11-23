@@ -6,6 +6,12 @@
 	body { 
 		font-size:100%;     
 	}
+	.display-flex{
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+	}
 	
 	//Navigation
 	.nav a{
@@ -19,17 +25,12 @@
 	.welcome-breeze-text{
 		height: 295px;
 	}
-	
-	//Visie 1
-	.visieBlock h1{
-		width: @visieTitleWidth - 30;
-	}
 
 	.locations img{
 		height: initial;
 		width: initial;
 	}
-	.row{
+	.force-row{
 		width: 70%;
 		margin-left: auto;
 		margin-right: auto;
@@ -61,22 +62,22 @@
 		width: 25%;
 	}
 	.item._1{
-		height: @arikel-long + 75px;
+		height: @arikel-long + 100px;
 	}
 	.item._2{
 		height: @arikel-short + 50px;
 	}
 	.item._3{
-		height: @arikel-long + 75px;
+		height: @arikel-long + 100px;
 	}
 	.item._4{
 		height: @arikel-short + 50px;
 	}
 	.item._5{
-		height: @arikel-long + 75px;
+		height: @arikel-long + 100px;
 	}
 	.item._6{
-		height: @arikel-long + 75px;
+		height: @arikel-long + 100px;
 	}
 	.item._7{
 		height: @arikel-short + 50px;
@@ -85,22 +86,22 @@
 		height: @arikel-short + 50px;
 	}
 	.item._9{
-		height: @arikel-long + 75px;
+		height: @arikel-long + 100px;
 	}
 	.item._10{
 		height: @arikel-short + 50px;
 	}
 	.item._11{
-		height: @arikel-long + 75px;
+		height: @arikel-long + 100px;
 	}
 	.item._12{
 		height: @arikel-short + 50px;
 	}
 	.item._13{
-		height: @arikel-long + 75px;
+		height: @arikel-long + 100px;
 	}
 	.item._14{
-		height: @arikel-long + 75px;
+		height: @arikel-long + 100px;
 	}
 	.item._15{
 		height: @arikel-short + 50px;
@@ -136,7 +137,6 @@
 	.breezefm-right{
 		height: 100%;
 		position: absolute;
-		right: 0;
 	}
 	.btn-onair{
 		position: absolute;
@@ -188,7 +188,7 @@
 		font-size: 1.5em; 
 	}
 
-	.videoPlay{
+	.video-play{
 		height: @playWidth + 30;
 		width: @playHeight + 30;
 	}
@@ -211,10 +211,7 @@
 	.welcome-visie-height{
 		height: 265px;
 	}
-	.vertical-align {
-		display: flex;
-		align-items: center;
-	}
+
 	.visie-list-icon{
 		text-align: right;
 	}
@@ -234,6 +231,43 @@
 		font-size: 1.5em;
 	}
 
+	//artikels
+	.event-view-item{
+		height: 250px;
+	}
+	.calendar-view-item{
+		height: 200px;
+	}
+	.article .author{
+		border: none;
+		margin-top: 20px;
+	}
+	.author img{
+		border-radius: 50%;
+		margin-bottom: 10%;
+		width: 50%;
+	}
+	.author{
+		font-size: 0.8em;
+		padding-top: 0%;
+		padding-bottom: 0%;
+	}
+	.author .read-more{
+		margin-bottom: 15%;
+	}
+	ul.social-media-author{
+		padding-top: @footerSocialMediaTopPadding;
+	}
+
+	.social-media-icon-author{
+		width: 25px;
+		height: 25px;
+	}
+	.authorline{
+		display: none;
+	}
+
+
 
 
 }
@@ -245,9 +279,6 @@
 	}
 	.nav a{
 		font-size: 1em;
-	}
-	.visieBlock h1{
-		width: @visieTitleWidth - 40;
 	}
 	.location{
 		width: 20%;

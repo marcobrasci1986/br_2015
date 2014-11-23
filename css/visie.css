@@ -25,6 +25,12 @@ Footer
   background-image: url(../images/visie-main.jpg);
   background-size: cover;
 }
+.video-play-color-visie {
+  background-color: rgba(229, 202, 123, 0.5);
+}
+.video-play-color-visie:hover {
+  background-color: #e5ca7b;
+}
 .visieText {
   font-size: 150px;
 }
@@ -71,7 +77,8 @@ Footer
   margin: auto;
 }
 .visie-item {
-  margin-top: 5%;
+  margin-top: 10%;
+  display: inline-block;
 }
 .visie-item .slogan-wrapper {
   font-family: 'signika-bold';
