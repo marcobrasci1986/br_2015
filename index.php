@@ -2,17 +2,16 @@
 include_once("templateFiles/header.php");
 ?>
 
-<div class="banner main-image">
-    <div class="centerAbsolute welcome-breeze-text welcome-breeze-height navMargin">
-        <h1 class="welcomeText">'Welkom <br> bij Breeze,</h1>
-    </div>
-    <a class="various fancybox.iframe" href="http://www.youtube.com/embed/L9szn1QQfas?autoplay=1&showinfo=0">
-        <div class="video-play video-play-color centerAbsolute navMargin">
-            <img src="images/play.png" class="imagePlay">
-        </div>
-    </img>
-</a>
 
+<div class="banner main-image vertical-align">    
+    <div class="banner-inner vertical-align">
+        <h1 class="welcome-text">'Welkom <br/>bij Breeze,</h1>
+        <a class="various fancybox.iframe" href="http://www.youtube.com/embed/L9szn1QQfas?autoplay=1&showinfo=0">
+            <div class="video-play video-play-color vertical-align centerAbsolute">
+                <img src="images/play.png" class="imagePlay"></img>
+            </div>
+        </a> 
+    </div>
 </div>
 
 
@@ -34,8 +33,8 @@ include_once("templateFiles/header.php");
 
 <!-- LOCATIONS-->
 
-<div class="container-fluid locations">
-    <div id="locations" class="row text-center">
+<div id="locations"  class="container-fluid locations special-bg image-move">
+    <div class="row text-center">
         <div class="breeze-block col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
             <div class="col-xs-4 col-sm-4 col-md-4 col-lg-2 location">
                 <img src="images/kortrijk.png" />
@@ -92,7 +91,7 @@ include_once("templateFiles/header.php");
 
 
 <!-- CALENDAR-->
-<div class="container-fluid calendar positionRelative special-bg">
+<div id="calendar" class="container-fluid calendar positionRelative special-bg">
     <div class="row">
         <div class="breeze-block col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
             <div class="arrowBlock text-center">
@@ -160,7 +159,7 @@ include_once("templateFiles/header.php");
             </div>
             <div class="custom-pagination">
                 <button class="less-activities-btn pagination-button"><span class="glyphicon glyphicon-play pagination-less-icon"></span>Voorbije activiteiten</button>
-                <button class="more-activities-btn pagination-button">Meer activiteiten<span class="glyphicon glyphicon-play pagination-more-icon"></span></button>
+                <button class="breeze-btn pagination-button">Meer activiteiten<span class="glyphicon glyphicon-play pagination-more-icon"></span></button>
             </div>
         </div>
     </div>
@@ -284,7 +283,7 @@ include_once("templateFiles/header.php");
 
             <div class="custom-pagination">
                 <button class="less-activities-btn pagination-button"><span class="glyphicon glyphicon-play pagination-less-icon"></span>Voorbije activiteiten</button>
-                <button class="more-activities-btn pagination-button">Meer activiteiten<span class="glyphicon glyphicon-play pagination-more-icon"></span></button>
+                <button class="breeze-btn pagination-button">Meer activiteiten<span class="glyphicon glyphicon-play pagination-more-icon"></span></button>
             </div>
         </div>
     </div>
@@ -306,7 +305,7 @@ include_once("templateFiles/header.php");
 
 
 
-<div class="container-fluid breezefm-block">
+<div id="breezefm" class="container-fluid breezefm-block">
     <div class="row text-center">    
         <div class="breeze-block col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">   
             <img src="images/breezefm.png"></img>
@@ -341,7 +340,7 @@ include_once("templateFiles/header.php");
                 </div>
                 <h1>Samen op weg</h1>
                 <p>Nullam gravida lorem at enim maximus tristique. Ut venenatis aliquam bibendum. Duis rhoncus sem a maximus condimentum. Nulla scelerisque viverra nulla, vitae dignissim lectus malesuada quis. Nullam sit amet urna in dui elementum consequat.</p>
-                <button class="more-activities-btn pagination-button btn-onair">
+                <button class="breeze-btn pagination-button btn-onair">
                     On Air
                     <span class="glyphicon glyphicon-play pagination-more-icon"></span>
                 </button> 

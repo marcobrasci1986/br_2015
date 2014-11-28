@@ -6,21 +6,15 @@
       <h6 class="footerSlogan">jongeren met een passie voor Jezus</h6>
 
       <ul class="socialMediaIcons">
-        <li><div class="vertical-align social-media-icon">
-          <div class="inner">
-            <a href="#"><i class="fa fa-facebook"></i></a>
-          </div>
-        </div></li>
-        <li><div class="vertical-align social-media-icon">
-          <div class="inner">
-            <a href="#"><i class="fa fa-twitter"></i></a>
-          </div>
-        </div></li>
-        <li><div class="vertical-align social-media-icon">
-          <div class="inner">
-            <a href="#"><i class="fa fa-instagram"></i></a>
-          </div>
-        </div></li>
+        <li class="vertical-align social-media-icon">
+          <a href="#"><i class="fa fa-facebook"></i></a>  
+        </li>
+        <li class="vertical-align social-media-icon">
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </li>
+        <li class="vertical-align social-media-icon">
+          <a href="#"><i class="fa fa-instagram"></i></a>
+        </li>
 
       </ul>
 

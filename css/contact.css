@@ -1,0 +1,55 @@
+/**
+Navigation
+*/
+/**
+Banner
+*/
+/**
+Visie Block  
+*/
+/**
+Locations
+*/
+/**
+Colors 
+*/
+/*
+Calendar Pagination
+*/
+/*
+Artikels
+*/
+/*@arikel-long: 375px;
+@arikel-short: 150px;*/
+/**
+Footer
+*/
+.contact-main {
+  background-image: url(../images/contact.jpg);
+  background-size: cover;
+}
+.square-bg {
+  background-image: url(../images/square-bg.jpg);
+  background-size: cover;
+}
+.team-member div {
+  color: #959595;
+}
+.team-member .mobile {
+  margin-top: 10%;
+}
+.contact-form {
+  background-color: #f7f7f7;
+}
+.form-control {
+  background-color: #dcdcdc;
+}
+.contact-blue {
+  color: #78b096;
+}
+.contact-adres h1 {
+  font-family: 'signika-regular';
+}
+.teammembers {
+  margin-top: 5%;
+}

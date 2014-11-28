@@ -2,6 +2,9 @@
 Navigation
 */
 /**
+Banner
+*/
+/**
 Visie Block  
 */
 /**
@@ -23,6 +26,7 @@ Footer
 */
 .visie-main {
   background-image: url(../images/visie-main.jpg);
+  background-position: center center;
   background-size: cover;
 }
 .video-play-color-visie {
@@ -31,11 +35,8 @@ Footer
 .video-play-color-visie:hover {
   background-color: #e5ca7b;
 }
-.visieText {
+.welcome-text-visie {
   font-size: 150px;
-}
-.welcome-visie-height {
-  height: 230px;
 }
 .visie-video-play {
   height: 17%;

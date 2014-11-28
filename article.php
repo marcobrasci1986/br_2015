@@ -93,21 +93,15 @@ include_once("templateFiles/header.php");
 									<div class="col-xs-6 col-sm-12">	
 										<div class="social-media">
 											<ul class="social-media-author">
-												<li><div class="vertical-align social-media-icon-author">
-													<div class="inner">
-														<a href="#"><i class="fa fa-facebook"></i></a>
-													</div>
-												</div></li>
-												<li><div class="vertical-align social-media-icon-author">
-													<div class="inner">
-														<a href="#"><i class="fa fa-twitter"></i></a>
-													</div>
-												</div></li>
-												<li><div class="vertical-align social-media-icon-author">
-													<div class="inner">
-														<a href="#"><i class="fa fa-instagram"></i></a>
-													</div>
-												</div></li>
+												<li class="vertical-align social-media-icon-author">
+													<a href="#"><i class="fa fa-facebook"></i></a>
+												</li>
+												<li class="vertical-align social-media-icon-author">
+													<a href="#"><i class="fa fa-twitter"></i></a>
+												</li>
+												<li class="vertical-align social-media-icon-author">
+													<a href="#"><i class="fa fa-instagram"></i></a>
+												</li>
 
 											</ul>
 										</div>
@@ -120,48 +114,48 @@ include_once("templateFiles/header.php");
 						</div>
 					</div>
 
-				<div class="container no-padding-bottom sink-in-footer">
-					<div class="row">
-						<div class="breeze-block  no-padding-bottom col-xs-10 col-xs-offset-1 col-sm-12 col-sm-offset-0">
-							<div class="arrowBlock text-center">
-								<h1>Lees ook</h1>
-								<h6></h6>
-								<span class="glyphicon glyphicon-arrow-down arrow"></span>
+					<div class="container no-padding-bottom sink-in-footer">
+						<div class="row">
+							<div class="breeze-block  no-padding-bottom col-xs-10 col-xs-offset-1 col-sm-12 col-sm-offset-0">
+								<div class="arrowBlock text-center">
+									<h1 class="block-title">Lees ook</h1>
+									<h6></h6>
+									<span class="glyphicon glyphicon-arrow-down arrow"></span>
+								</div>
+
+								<div class="sink-in-footer">
+									<div class="col-xs-6 col-sm-3 event-view-item red">
+										<div class="date">2014.01.01</div>
+										<div class="author">becky cauwels</div>
+										<h1>Spetterende opening van het nieuwe seizoen</h1>
+									</div>
+									<div class="col-xs-6 col-sm-3 event-view-item orange">
+										<div class="date">2014.01.01</div>
+										<div class="author">becky cauwels</div>
+										<h1>Launch nieuwe website</h1>
+
+									</div>        
+									<div class="col-xs-6 col-sm-3 event-view-item aqua">
+										<div class="date">2014.05.13</div>
+										<div class="author">johan menheere</div>
+										<h1>Waarom stierf Jesus aan het kruis voor ons?</h1>
+									</div>        
+									<div class="col-xs-6 col-sm-3 event-view-item yellow">
+										<div class="date">2014.05.13</div>
+										<div class="author">johan menheere</div>
+										<h1>Waarom stierf Jesus aan het kruis voor ons?</h1>
+									</div>
+								</div>
 							</div>
 
-							<div class="sink-in-footer">
-								<div class="col-xs-6 col-sm-3 event-view-item red">
-									<div class="date">2014.01.01</div>
-									<div class="author">becky cauwels</div>
-									<h1>Spetterende opening van het nieuwe seizoen</h1>
-								</div>
-								<div class="col-xs-6 col-sm-3 event-view-item orange">
-									<div class="date">2014.01.01</div>
-									<div class="author">becky cauwels</div>
-									<h1>Launch nieuwe website</h1>
 
-								</div>        
-								<div class="col-xs-6 col-sm-3 event-view-item aqua">
-									<div class="date">2014.05.13</div>
-									<div class="author">johan menheere</div>
-									<h1>Waarom stierf Jesus aan het kruis voor ons?</h1>
-								</div>        
-								<div class="col-xs-6 col-sm-3 event-view-item yellow">
-									<div class="date">2014.05.13</div>
-									<div class="author">johan menheere</div>
-									<h1>Waarom stierf Jesus aan het kruis voor ons?</h1>
-								</div>
-							</div>
 						</div>
-
-
 					</div>
-				</div>
 
 
 
 
 
-				<?php
-				include_once("templateFiles/footer.php");
-				?>
+					<?php
+					include_once("templateFiles/footer.php");
+					?>

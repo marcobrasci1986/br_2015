@@ -12,19 +12,24 @@
 		display: -ms-flexbox;
 		display: flex;
 	}
-	
+	.align-items{
+		align-items: center;
+	}
+
+
 	//Navigation
 	.nav a{
 		font-size: 1.5em;
 	}
 
 	//Main image
-	.welcomeText{
-		font-size: 110px;
+	.welcome-text{
+		font-size: @welcome-text-size + 30;
 	}
-	.welcome-breeze-text{
-		height: 295px;
+	.welcome-text-visie{
+		font-size: @welcome-text-visie-size + 30;
 	}
+
 
 	.locations img{
 		height: initial;
@@ -267,6 +272,39 @@
 		display: none;
 	}
 
+	//contact
+	.right-border{
+		border-right: 1px solid  @visieBlockTextColor;
+	}
+
+	.center-row {
+		display:table;
+	}
+	.center {
+		display:table-cell;
+		vertical-align:middle;
+		float:none;
+	}
+	.center-align-top {
+		display:table-cell;
+		vertical-align:top;
+		float:none;
+	}
+	.event-border{
+		border: none;
+	}
+	.event{
+		text-align: left;
+		padding-left: 10%;
+		height: 100px;
+	}
+	.events-block .row{
+		margin-top: 0;
+	}
+
+	.event-icons{
+		width: initial;
+	}
 
 
 

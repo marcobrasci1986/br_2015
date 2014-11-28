@@ -7,9 +7,13 @@ html,body {
 }
 .force-row{
     width: 80%;
-    margin-left: auto;
+    margin-left: auto; 
     margin-right: auto;
 
+}
+
+.block-title{
+    font-size: 4em;
 }
 ul li{
     list-style: none;
@@ -20,40 +24,56 @@ a{
 a:hover{
     color: @linkcolor;
 }
+.nav-padding{
+    padding-top: 51px;
+}
+.nav-padding-absolute{
+    top: 51px !important;
+}
+.nav-margin{
+    margin-top: 51px;
+    position: relative;
+}
 
 
 
 
 .special-bg{
     background-image: url(../images/special-bg.png);
-    background-size: cover;
+
 }
 
 //Main image
 .banner {
     height:100%;
+    margin-top: 51px;
+}
+.banner-inner{
+    width: 90%;
+    //background-color: @red;
+    position: relative;
+    margin-top:-51px;
 }
 .main-image{
     background-image: url(../images/home-image.jpg);
+    background-position: center center;
 }
 .welcome-breeze-text{
     width: 80%;   
     text-align: center;
-    color:@welcomeTextColor;
+    
 }
 .welcome-breeze-height{ 
     height: 200px;
 }
-.welcomeText{
-    font-size: 68px;
+.welcome-text{
+    font-size: @welcome-text-size;
+    text-align: center;
+    color:@welcomeTextColor;
+    margin: 0px;
 }
 .imagePlay{
- position: absolute;
- top: 50%;
- margin-top: -8px;
- left: 50%;
- margin-left: -8px;
- width: 16px;
+   width: 16px;
 }
 
 
@@ -150,7 +170,7 @@ a:hover{
     text-align: center;
 }
 .nav a{
- font-size: 3em;
+   font-size: 3em;
 }
 
 
@@ -216,7 +236,7 @@ a:hover{
 //Locations
 .location{
 
-   cursor: pointer;  
+ cursor: pointer;  
 }
 .locations{
     background-color: @locationBg;
@@ -227,6 +247,7 @@ a:hover{
 .location h1{
     color:@visieBlockTitleColor;
     text-transform: uppercase;
+    font-size: 1.75em
 }
 .location h6{
     font-size: 1.0em;
@@ -240,8 +261,12 @@ a:hover{
     background-position: center;
 }
 .locations img{
- height: 40px;
- width: 60px;
+   height: 40px;
+   width: 60px;
+}
+
+.image-move{
+    background-position-y: -280px;
 }
 
 .hoverLocation h1, .hoverLocation h6{
@@ -255,7 +280,7 @@ a:hover{
 
 //Parrallel scroling
 #visie2{
-   background-image: url(../images/visie-butterfly.jpg);
+ background-image: url(../images/visie-butterfly.jpg);
 }
 #visie3{ 
     background-image: url(../images/visie3.jpg);
@@ -283,8 +308,8 @@ a:hover{
     right: 30px;  
 }
 .butterfly3{
-   position: absolute;
-   left: 350px;  
+ position: absolute;
+ left: 350px;  
 }
 
 
@@ -298,7 +323,9 @@ a:hover{
 }
 .arrowBlock h6{
     width: 65%;
-    margin: 2% auto 2% auto;     
+    margin: 2% auto 2% auto;    
+    font-family: 'signika-light'; 
+    color: #828282;
 }
 .arrow{
     font-size: 1.5em;
@@ -322,7 +349,7 @@ a:hover{
     cursor: pointer;
 }
 .dayLocation span{
- font-size: 1.25em;
+   font-size: 1.25em;
 }
 .calender-item .day{
     font-family: 'signika-bold';
@@ -352,19 +379,24 @@ a:hover{
 }
 .pagination-button{
     text-transform: uppercase;
-    padding: 1%;
-    border:1px solid @dark-pagination-color;
+    padding: 1.5%;
+    
 }
 .less-activities-btn{
     color: #828282;
     background-color: transparent;
 
 }
-.more-activities-btn{
+.breeze-btn{
     background-color: @dark-pagination-color;
     color:@welcomeTextColor;
+    border:1px solid @dark-pagination-color;
+    padding: 1.5%;
 }
-
+.breeze-btn:hover{
+    background-color: @red;
+    border:1px solid @red;
+}
 .pagination-less-icon{
     color: #828282;
     -moz-transform: scaleX(-1);
@@ -569,8 +601,8 @@ ul.socialMediaIcons{
     padding-left: 0;
 }
 ul.socialMediaIcons li{
- float:left;
- background-color: @socialMedaieIconBg;
+   float:left;
+   background-color: @socialMedaieIconBg;
 }
 ul.socialMediaIcons li a{
     color: @white;
@@ -588,8 +620,24 @@ ul.socialMediaIcons li a{
     display: none;
 }
 .vertical-align {
-    display: flex;
+    display: -webkit-box;   /* OLD: Safari,  iOS, Android browser, older WebKit browsers.  */
+    display: -moz-box;      /* OLD: Firefox (buggy) */
+    display: -ms-flexbox;   /* MID: IE 10 */
+    display: -webkit-flex;  /* NEW, Chrome 21–28, Safari 6.1+ */
+    display: flex;          /* NEW: IE11, Chrome 29+, Opera 12.1+, Firefox 22+ */
+
+    -webkit-box-align: center; -moz-box-align: center; /* OLD… */
+    -ms-flex-align: center; /* You know the drill now… */
+    -webkit-align-items: center;
     align-items: center;
+
+
+    -webkit-box-pack: center; 
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+
 }
 
 
@@ -617,8 +665,8 @@ ul.footerMenuRight li.first{
     margin-left: 0px;
 }
 ul.footerMenuRight li a{
- color:@footerSloganColor;
- text-decoration: none;
+   color:@footerSloganColor;
+   text-decoration: none;
 }
 ul.footerMenuLeft img{
     width: 70%

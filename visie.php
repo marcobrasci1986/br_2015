@@ -2,17 +2,28 @@
 include_once("templateFiles/header.php");
 ?>
 
-<div class="banner visie-main">
-	<div class="centerAbsolute welcome-breeze-text welcome-visie-height navMargin">
+<!-- <div class="banner visie-main nav-margin">
+	<div class="centerAbsolute welcome-breeze-text welcome-visie-height">
 		<h1 class="visieText">'Wij,</h1>
 	</div>
 	<a class="various fancybox.iframe" href="http://www.youtube.com/embed/L9szn1QQfas?autoplay=1&showinfo=0">
-		<div class="video-play video-play-color-visie centerAbsolute navMargin">
+		<div class="video-play video-play-color-visie centerAbsolute">
 			<img src="images/play.png" class="imagePlay">
 		</div>
 	</img>
 </a>
 
+</div> -->
+
+<div class="banner visie-main vertical-align">    
+    <div class="banner-inner vertical-align">
+        <h1 class="welcome-text welcome-text-visie">'Wij,</h1>
+        <a class="various fancybox.iframe" href="http://www.youtube.com/embed/L9szn1QQfas?autoplay=1&showinfo=0">
+            <div class="video-play video-play-color vertical-align centerAbsolute">
+                <img src="images/play.png" class="imagePlay"></img>
+            </div>
+        </a> 
+    </div>
 </div>
 
 
@@ -21,7 +32,7 @@ include_once("templateFiles/header.php");
 <div class="container-fluid lightGrey border-bottom-grey">
 	<div class="row text-center">
 		<div class="breeze-block col-xs-10 col-xs-offset-1 col-lg-8 col-lg-offset-2">
-			<h1>Wie zijn wij?</h1>
+			<h1 class="block-title">Wie zijn wij?</h1>
 			<h6></h6>
 			<span class="glyphicon glyphicon-arrow-down arrow"></span>
 
@@ -133,70 +144,65 @@ include_once("templateFiles/header.php");
 	</div>
 </div>
 
-
-
-
 <div class="container-fluid">
-
-	<div class="row">
+	<div class="row center-row">
 		<div class="breeze-block text-center col-xs-10 col-xs-offset-1 col-lg-8 col-lg-offset-2">
 			<h1 class="regular">Na twaalf jaar namen we de tijd om ons verhaal te laten herschrijven door Hem om wie het hele verhaal gaat</h1>
-
-			<div class="vertical-align visie-item">
-				<div class="col-xs-12 col-sm-2 slogan-wrapper">
+			<div class="visie-item">
+				<div class="col-xs-12 col-sm-2 slogan-wrapper center">
 					<div class="va-text slogan">Onder de indruk van de eerste christenen.</div>
 				</div>
-				<div class="col-xs-12 col-sm-1 icon">
+				<div class="col-xs-12 col-sm-1 icon center">
 					<div class="padding-visie-item">
 						<span class="yellow-text glyphicon glyphicon-play" aria-hidden="true"></span>
 					</div>
 				</div>
-				<div class="col-xs-12 col-sm-9 text">
+				<div class="col-xs-12 col-sm-9 text center">
 					We zijn onder de indruk van het <b>voorbeeld van de eertse christenen</b>. In Handelingen staat dat zij zich toelegden
 					op gebed, onderwijs, gemeenschap en zorg voor de zwakken, zij zagen vele wonderen gebeuren. Wij volgen hun voorbeeld na en 
 					zetten <b>gebed, onderwijs, gemeenschap en sociale betrokkenheid</b> centraal in onze organisatie.			
 				</div>
 			</div>
-			<div class="vertical-align visie-item">
-				<div class="col-xs-12 col-sm-2 slogan-wrapper">
+			<div class="visie-item">
+				<div class="col-xs-12 col-sm-2 slogan-wrapper center">
 					<div class="va-text slogan">Op zoek naar diepgang.</div>
 				</div>
-				<div class="col-xs-12 col-sm-1 icon">
+				<div class="col-xs-12 col-sm-1 icon center">
 					<div class="padding-visie-item">
 						<span class="yellow-text glyphicon glyphicon-play" aria-hidden="true"></span>
 					</div>
 				</div>
-				<div class="col-xs-12 col-sm-9 text">
+				<div class="col-xs-12 col-sm-9 text center">
 					Wij verlangen ernaar <b>de glorie van God te weerspiegelen</b> in onze projecten. Bij het invullen van programma's en het 
 					uitnodigen van sprekers gaan wij <b>bewust op zoek naar diepgang</b>. Goede inhoud is onze prioriteit.
 
 				</div>
 			</div>
-			<div class="vertical-align visie-item">
-				<div class="col-xs-12 col-sm-2 slogan-wrapper">
+			<div class="visie-item">
+				<div class="col-xs-12 col-sm-2 slogan-wrapper center">
 					<div class="va-text slogan">Onder de indruk van de eerste christenen.</div>
 				</div>
-				<div class="col-xs-12 col-sm-1 icon">
+				<div class="col-xs-12 col-sm-1 icon center">
 					<div class="padding-visie-item">
 						<span class="yellow-text glyphicon glyphicon-play" aria-hidden="true"></span>
 					</div>
 				</div>
-				<div class="col-xs-12 col-sm-9 text ">
+				<div class="col-xs-12 col-sm-9 text center">
 					We zijn onder de indruk van het <b>voorbeeld van de eertse christenen</b>. In Handelingen staat dat zij zich toelegden
 					op gebed, onderwijs, gemeenschap en zorg voor de zwakken, zij zagen vele wonderen gebeuren. Wij volgen hun voorbeeld na en 
 					zetten <b>gebed, onderwijs, gemeenschap en sociale betrokkenheid</b> centraal in onze organisatie.			
 				</div>
 			</div>
-			<div class="vertical-align visie-item">
-				<div class="col-xs-12 col-sm-2 slogan-wrapper">
+			<div class="visie-item">
+				<div class="col-xs-12 col-sm-2 slogan-wrapper center">
 					<div class="va-text slogan">Op zoek naar diepgang.</div>
 				</div>
-				<div class="col-xs-12 col-sm-1 icon">
+				<div class="col-xs-12 col-sm-1 icon center">
 					<div class="padding-visie-item">
 						<span class="yellow-text glyphicon glyphicon-play" aria-hidden="true"></span>
 					</div>
 				</div>
-				<div class="col-xs-12 col-sm-9 text">
+				<div class="col-xs-12 col-sm-9 text center">
 					Wij verlangen ernaar <b>de glorie van God te weerspiegelen</b> in onze projecten. Bij het invullen van programma's en het 
 					uitnodigen van sprekers gaan wij <b>bewust op zoek naar diepgang</b>. Goede inhoud is onze prioriteit.
 
@@ -204,13 +210,8 @@ include_once("templateFiles/header.php");
 			</div>
 		</div>
 	</div>
-
-
-
-
-
-
 </div>
+
 
 <!-- VISIE BLOCK 5-->
 <div class="container-fluid textColorWhite"> 
@@ -235,7 +236,7 @@ include_once("templateFiles/header.php");
 	<div class="row ">
 		<div class="breeze-block no-padding-bottom sink-in-footer col-xs-10 col-xs-offset-1 col-lg-8 col-lg-offset-2">
 			<div class="arrowBlock text-center">
-				<h1>Zin om mee te doen?</h1>
+				<h1 class="block-title">Zin om mee te doen?</h1>
 				<h6></h6>
 				<span class="glyphicon glyphicon-arrow-down arrow"></span>
 			</div>

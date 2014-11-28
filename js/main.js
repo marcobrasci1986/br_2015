@@ -35,11 +35,15 @@ $(".location" ).hover(
   }
   );
 
-//Hide menu when clicked
-function animateScroll(id){
-  $(id).animatescroll();
-  $('#navmain').collapse('hide');
-}
+$(".event" ).hover(
+  function() {
+    $( this ).addClass("event-location-hover");
+  }, function() {
+    $( this ).removeClass( "event-location-hover" );
+  }
+  );
+
+
 
 //Visie yellow overlay
 $('.visie-video-block').hover(
@@ -69,3 +73,8 @@ if(container != null){
 $(function () {
   $('[data-toggle="popover"]').popover()
 })
+//Hide menu when clicked
+function animateScroll(id){
+  $(id).animatescroll();
+  $('#navmain').collapse('hide');
+}

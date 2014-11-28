@@ -5,6 +5,9 @@ Here we define some utility classes
 Navigation
 */
 /**
+Banner
+*/
+/**
 Visie Block  
 */
 /**
@@ -72,4 +75,7 @@ Footer
 }
 .debug {
   border: 1px solid black;
+}
+.justify {
+  text-align: justify;
 }

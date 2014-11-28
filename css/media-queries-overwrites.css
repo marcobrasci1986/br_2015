@@ -3,6 +3,9 @@
 Navigation
 */
 /**
+Banner
+*/
+/**
 Visie Block  
 */
 /**
@@ -33,14 +36,17 @@ Footer
     display: -ms-flexbox;
     display: flex;
   }
+  .align-items {
+    align-items: center;
+  }
   .nav a {
     font-size: 1.5em;
   }
-  .welcomeText {
+  .welcome-text {
     font-size: 110px;
   }
-  .welcome-breeze-text {
-    height: 295px;
+  .welcome-text-visie {
+    font-size: 180px;
   }
   .locations img {
     height: initial;
@@ -254,6 +260,36 @@ Footer
   }
   .authorline {
     display: none;
+  }
+  .right-border {
+    border-right: 1px solid #a0a0a0;
+  }
+  .center-row {
+    display: table;
+  }
+  .center {
+    display: table-cell;
+    vertical-align: middle;
+    float: none;
+  }
+  .center-align-top {
+    display: table-cell;
+    vertical-align: top;
+    float: none;
+  }
+  .event-border {
+    border: none;
+  }
+  .event {
+    text-align: left;
+    padding-left: 10%;
+    height: 100px;
+  }
+  .events-block .row {
+    margin-top: 0;
+  }
+  .event-icons {
+    width: initial;
   }
 }
 /* Medium devices (desktops, 992px and up) */

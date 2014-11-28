@@ -2,6 +2,9 @@
 Navigation
 */
 /**
+Banner
+*/
+/**
 Visie Block  
 */
 /**
@@ -32,6 +35,9 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+.block-title {
+  font-size: 4em;
+}
 ul li {
   list-style: none;
 }
@@ -41,33 +47,46 @@ a {
 a:hover {
   color: #1d8281;
 }
+.nav-padding {
+  padding-top: 51px;
+}
+.nav-padding-absolute {
+  top: 51px !important;
+}
+.nav-margin {
+  margin-top: 51px;
+  position: relative;
+}
 .special-bg {
   background-image: url(../images/special-bg.png);
-  background-size: cover;
 }
 .banner {
   height: 100%;
+  margin-top: 51px;
+}
+.banner-inner {
+  width: 90%;
+  position: relative;
+  margin-top: -51px;
 }
 .main-image {
   background-image: url(../images/home-image.jpg);
+  background-position: center center;
 }
 .welcome-breeze-text {
   width: 80%;
   text-align: center;
-  color: #f7f7f7;
 }
 .welcome-breeze-height {
   height: 200px;
 }
-.welcomeText {
-  font-size: 68px;
+.welcome-text {
+  font-size: 80px;
+  text-align: center;
+  color: #f7f7f7;
+  margin: 0px;
 }
 .imagePlay {
-  position: absolute;
-  top: 50%;
-  margin-top: -8px;
-  left: 50%;
-  margin-left: -8px;
   width: 16px;
 }
 #navmain {
@@ -212,6 +231,7 @@ a:hover {
 .location h1 {
   color: #3c3c3c;
   text-transform: uppercase;
+  font-size: 1.75em;
 }
 .location h6 {
   font-size: 1.0em;
@@ -226,6 +246,9 @@ a:hover {
 .locations img {
   height: 40px;
   width: 60px;
+}
+.image-move {
+  background-position-y: -280px;
 }
 .hoverLocation h1,
 .hoverLocation h6 {
@@ -273,6 +296,8 @@ a:hover {
 .arrowBlock h6 {
   width: 65%;
   margin: 2% auto 2% auto;
+  font-family: 'signika-light';
+  color: #828282;
 }
 .arrow {
   font-size: 1.5em;
@@ -320,16 +345,21 @@ a:hover {
 }
 .pagination-button {
   text-transform: uppercase;
-  padding: 1%;
-  border: 1px solid #3d3d3d;
+  padding: 1.5%;
 }
 .less-activities-btn {
   color: #828282;
   background-color: transparent;
 }
-.more-activities-btn {
+.breeze-btn {
   background-color: #3d3d3d;
   color: #f7f7f7;
+  border: 1px solid #3d3d3d;
+  padding: 1.5%;
+}
+.breeze-btn:hover {
+  background-color: #d46c5b;
+  border: 1px solid #d46c5b;
 }
 .pagination-less-icon {
   color: #828282;
@@ -528,8 +558,28 @@ ul.socialMediaIcons li a {
   display: none;
 }
 .vertical-align {
+  display: -webkit-box;
+  /* OLD: Safari,  iOS, Android browser, older WebKit browsers.  */
+  display: -moz-box;
+  /* OLD: Firefox (buggy) */
+  display: -ms-flexbox;
+  /* MID: IE 10 */
+  display: -webkit-flex;
+  /* NEW, Chrome 21–28, Safari 6.1+ */
   display: flex;
+  /* NEW: IE11, Chrome 29+, Opera 12.1+, Firefox 22+ */
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  /* OLD… */
+  -ms-flex-align: center;
+  /* You know the drill now… */
+  -webkit-align-items: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
 }
 .verticalLine {
   border-left: 1px solid #ffffff;

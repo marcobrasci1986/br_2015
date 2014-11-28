@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/visie.css" />
   <link rel="stylesheet" href="css/article.css" />
+  <link rel="stylesheet" href="css/contact.css" /> 
+  <link rel="stylesheet" href="css/location.css" /> 
   <link rel="stylesheet" href="css/views.css" />
   <link rel="stylesheet" href="css/font.css" />
   <link rel="stylesheet" href="css/util.css" />
@@ -23,7 +25,7 @@
 
 </head>
 <body>
- <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
   <div class="container-fliud-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
@@ -32,20 +34,21 @@
        <span class="icon-bar"></span>
        <span class="icon-bar"></span>
      </button>
-     <a href="#">
+     <a href="/br_2015/index.php">
       <img src="images/breeze-logo.jpg" class="breeze-logo"/>
     </a>
   </div>
   <div id="navmain" class="navbar-collapse collapse">
     <ul class="nav navbar-nav navbar-right">
-      <li class="active"><a href="#">kalender</a></li>
-      <li><a href="#" onclick="animateScroll('#locations');">locaties</a></li>
-      <li><a href="#contact">breezefm</a></li>
-      <li><a href="#contact">artikels</a></li>
-      <li><a href="#contact">visie</a></li>
-      <li><a href="#contact">contact</a></li>
+      <li><a href="index.php#locations" onclick="animateScroll('#locations');">locaties</a></li>
+      <li class="active" onclick="animateScroll('#calendar');"><a href="index.php#calendar">kalender</a></li>
+            <li><a href="index.php#artikels" onclick="animateScroll('#artikels');">artikels</a></li>
+      <li><a href="index.php#breezefm" onclick="animateScroll('#breezefm');">breezefm</a></li>
+
+      <li><a href="visie.php">visie</a></li>
+      <li><a href="contact.php">contact</a></li>
     </ul>
   </div>
 </div>
-</div>  
+</div>   
 
