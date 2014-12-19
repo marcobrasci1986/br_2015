@@ -4,12 +4,20 @@ $(document).ready(function () {
   // element.parallax(horizontal position, speed)
   
   $('#visie2').parallax("50%", 0.2);
-  $('#visie3').parallax("50%", 0.2);
-  $('#visie4').parallax("50%", 0.2);
-  $('#visie5').parallax("50%", 0.2);
   $('#visie2_1').parallax("100%", 0.5);
   $('#visie2_2').parallax("100%", 0.8);
   $('#visie2_3').parallax("20%", 0.6);
+
+  $('#visie3').parallax("50%", 0.2);
+  $('#visie3_1').parallax("0", 0.5);
+  $('#visie3_2').parallax("100%", 0.55);
+
+  $('#visie4').parallax("50%", 0.2);
+  $('#visie4_1').parallax("0", 0.6);
+  $('#visie4_2').parallax("0", 0.8);
+
+  $('#visie5').parallax("50%", 0.2);
+  $('#visie5_1').parallax("50%", 0.6);
 
 
 //You tube popup
