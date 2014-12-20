@@ -215,7 +215,8 @@ include_once("templateFiles/header.php");
 
 <!-- VISIE BLOCK 5-->
 <div class="container-fluid textColorWhite"> 
-	<div id="visie5" class="row parralax-image" data-stellar-background-ratio="0.1" > 
+    <div id="visie5" class="row parallax_container" > 
+        <div id="visie5_1" class="row parallax_image"></div>
 		<div class="col-xs-10 col-xs-offset-1 col-lg-8 col-lg-offset-2 visieBlock breeze-block">
 			<h1>'Help ons een zegen te zijn voor de vlaamse jongeren,</h1>
 			<h6>Praesent sed lobortis diam. Pellentesque nec luctus urna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse sollicitudin augue a justo ornare lobortis.</h6>
