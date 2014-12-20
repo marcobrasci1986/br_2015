@@ -9,7 +9,7 @@ $(document).ready(function () {
   $('#visie2_3').parallax("20%", 0.6);
 
   $('#visie3').parallax("50%", 0.2);
-  $('#visie3_1').parallax("0", 0.5);
+  $('#visie3_1').parallax("0", 0.6);
   $('#visie3_2').parallax("100%", 0.55);
 
   $('#visie4').parallax("50%", 0.2);
@@ -17,7 +17,7 @@ $(document).ready(function () {
   $('#visie4_2').parallax("0", 0.8);
 
   $('#visie5').parallax("50%", 0.2);
-  $('#visie5_1').parallax("50%", 0.6);
+  $('#visie5_1').parallax("0", 0.7);
 
 
 //You tube popup
