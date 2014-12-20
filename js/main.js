@@ -10,7 +10,7 @@ $(document).ready(function () {
 
   $('#visie3').parallax("50%", 0.2);
   $('#visie3_1').parallax("0", 0.6);
-  $('#visie3_2').parallax("100%", 0.55);
+  $('#visie3_2').parallax("100%", 0.7);
 
   $('#visie4').parallax("50%", 0.2);
   $('#visie4_1').parallax("0", 0.6);
