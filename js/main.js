@@ -1,12 +1,24 @@
 $(document).ready(function () {
 
-//Parrallax
-if (!Modernizr.touch) {
-  $.stellar({
-    horizontalScrolling: false,
-    verticalScrolling: true
-  });
-}
+
+  // element.parallax(horizontal position, speed)
+  
+  $('#visie2').parallax("50%", 0.2);
+  $('#visie2_1').parallax("100%", 0.5);
+  $('#visie2_2').parallax("100%", 0.8);
+  $('#visie2_3').parallax("20%", 0.6);
+
+  $('#visie3').parallax("50%", 0.2);
+  $('#visie3_1').parallax("0", 0.6);
+  $('#visie3_2').parallax("100%", 0.7);
+
+  $('#visie4').parallax("50%", 0.2);
+  $('#visie4_1').parallax("0", 0.6);
+  $('#visie4_2').parallax("0", 0.8);
+
+  $('#visie5').parallax("50%", 0.2);
+  $('#visie5_1').parallax("0", 0.7);
+
 
 //You tube popup
 $(".various").fancybox({

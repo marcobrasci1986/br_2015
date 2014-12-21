@@ -61,6 +61,8 @@
 <script src="js/masonry.pkgd.min.js"></script>
 <!-- Parralax scrolling-->
 <script src="js/jquery.stellar.min.js"></script>
+<!-- Parralax scrolling-->
+<script src="js/jquery.parallax.js"></script>
 <!-- Custom js script-->
 <script src="js/main.js"></script>
 </body>

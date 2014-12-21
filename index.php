@@ -77,7 +77,10 @@ include_once("templateFiles/header.php");
 
 <!-- VISIE 2-->
 <div  class="container-fluid textColorWhite">
-    <div id="visie2" class="row parralax-image" data-stellar-background-ratio="0.1">
+    <div id="visie2" class="row parallax_container">  
+        <div id="visie2_1" class="row parallax_image"></div>
+        <div id="visie2_2" class="row parallax_image"></div>
+        <div id="visie2_3" class="row parallax_image"></div>
         <div class="breeze-block col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 visieBlock breeze-block">
             <h1>Wij zijn een groep jonge mensen met een passie voor Jezus</h1>
             <h6>Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent sed lobortis diam. Pellentesque nec luctus urna. Suspendisse sollicitudin augue a justo ornare lobortis.</h6>
@@ -86,7 +89,7 @@ include_once("templateFiles/header.php");
             </button>
         </div>
         
-    </div>
+    </div>      
 </div>
 
 
@@ -167,7 +170,9 @@ include_once("templateFiles/header.php");
 
 <!-- Visie 3-->
 <div class="container-fluid textColorWhite"> 
-    <div id="visie3" class="row parralax-image" data-stellar-background-ratio="0.1" > 
+    <div id="visie3" class="row parallax_container" >
+        <div id="visie3_1" class="row parallax_image"></div>
+        <div id="visie3_2" class="row parallax_image"></div>
         <div class="col-xs-8 col-xs-offset-2 col-lg-8 col-lg-offset-2 visieBlock breeze-block">
             <h1>'Wij zijn op zoek naar diepgang,</h1>
             <h6>Praesent sed lobortis diam. Pellentesque nec luctus urna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse sollicitudin augue a justo ornare lobortis.</h6>
@@ -291,7 +296,9 @@ include_once("templateFiles/header.php");
 
 <!-- VISIE 4-->
 <div class="container-fluid textColorWhite"> 
-    <div id="visie4" class="row parralax-image" data-stellar-background-ratio="0.1" > 
+    <div id="visie4" class="row parallax_container">
+        <div id="visie4_1" class="row parallax_image"></div>
+        <div id="visie4_2" class="row parallax_image"></div>
         <div class="col-xs-8 col-xs-offset-2 col-lg-8 col-lg-offset-2 visieBlock breeze-block">
             <h1>'Wij zijn geworteld in Jezus,</h1>
             <h6>Praesent sed lobortis diam. Pellentesque nec luctus urna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse sollicitudin augue a justo ornare lobortis.</h6>
@@ -355,7 +362,8 @@ include_once("templateFiles/header.php");
 
 <!-- VISIE BLOCK 5-->
 <div class="container-fluid textColorWhite"> 
-    <div id="visie5" class="row parralax-image" data-stellar-background-ratio="0.1" > 
+    <div id="visie5" class="row parallax_container" > 
+        <div id="visie5_1" class="row parallax_image"></div>
         <div class="col-xs-8 col-xs-offset-2 col-lg-8 col-lg-offset-2 visieBlock breeze-block">
             <h1>'Help ons een zegen te zijn voor de vlaamse jongeren,</h1>
             <h6>Praesent sed lobortis diam. Pellentesque nec luctus urna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse sollicitudin augue a justo ornare lobortis.</h6>
